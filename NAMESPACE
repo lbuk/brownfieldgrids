@@ -2,5 +2,6 @@
 
 export(brownfieldgrid_osm_borough)
 export(brownfieldgrid_osm_borough_nogrid)
+export(brownfieldgrid_osm_londondata)
 export(brownfieldgrid_osm_nlud)
 export(brownfieldgrid_osm_satellite)
