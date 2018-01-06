@@ -10,10 +10,10 @@
 
 brownfieldgrid_osm_borough_nogrid = function(borough) {
   
-  wgs84 = '+proj=longlat +datum=WGS84'
   
-  setwd("~/Downloads")
-  london_boro_shp = readOGR("statistical-gis-boundaries-london-folder/ESRI", "London_Borough_Excluding_MHW")
+  data(london_boro_shp)
+
+  wgs84 = '+proj=longlat +datum=WGS84'
   
   london_borough = spTransform(london_boro_shp, CRS(wgs84))
   
