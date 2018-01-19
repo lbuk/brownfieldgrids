@@ -1,7 +1,7 @@
 # brownfieldgrids
 
 ## Overview
-An R package for creating Mile x Mile grid maps of OpenStreetMap (OSM) brownfield land in London. The package provides functions for mapping OSM brownfield sites in London grid-by-grid and borough-by-borough. It also provides a function to compare OSM brownfied land with National Land Use Database (NLUD) 2009-2010 brownfield s.
+An R package for creating Mile x Mile grid maps of OpenStreetMap (OSM) brownfield land in London. The package provides functions for mapping OSM brownfield sites grid-by-grid and borough-by-borough in the city.
 
 ## Installation
 ```
