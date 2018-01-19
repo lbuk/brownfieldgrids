@@ -8,7 +8,7 @@ An R package for creating Mile x Mile grid maps of OpenStreetMap (OSM) brownfiel
 install.packages("devtools")
 library(devtools)
 
-devtools::install_github("username/packagename")
+devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 ```
 
