@@ -1,7 +1,7 @@
 # brownfieldgrids
 
 ## Overview
-An R package for creating Mile x Mile grid maps of OpenStreetMap (OSM) brownfield land in London. The package provides functions for mapping OSM brownfield sites grid-by-grid and borough-by-borough in the city.
+An R package for creating grid maps of OpenStreetMap (OSM) brownfield land in London. The package provides functions for mapping OSM brownfield sites grid-by-grid and borough-by-borough in the city.
 
 ## Installation
 ```
@@ -13,7 +13,7 @@ library(brownfieldgrids)
 ```
 
 ## Usage
-Create an OSM grid of brownfield land in Limehouse and the borough outline (i.e. Tower Hamlets). It also prints the borough in the command line. It may take some time to create the maps.
+Create a Mile x Mile OSM grid of brownfield land in Limehouse and the borough outline (i.e. Tower Hamlets). It also prints the borough in the command line. It may take some time to create the maps.
 ```
 brownfieldgrid_osm_borough("Limehouse, London")
 ```
@@ -33,7 +33,7 @@ Map of OSM brownfield land by borough.
 brownfield_osm_borough_nogrid("Tower Hamlets")
 ```
 
-Create a map of OSM brownfield land across Greater London.
+Create a quick map of OSM brownfield land across Greater London.
 ```
 brownfield_osm_londondata()
 ```
