@@ -33,6 +33,11 @@ Map of OSM brownfield land by borough.
 brownfield_osm_borough_nogrid("Tower Hamlets")
 ```
 
+Create a map of OSM brownfield land across Greater London.
+```
+brownfield_osm_londondata
+```
+
 ## Applications
 The functions can be used to create exploratory maps of brownfields in London. The grid maps of OpenStreetMap brownfield land can potentially be used to critically analyse and identify spaces for brownfield redevelopment anywhere in Greater London. The grid maps can, for example, be exported and critically used as part of reports, academic articles or masterplans.
 
