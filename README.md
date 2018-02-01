@@ -13,7 +13,7 @@ library(brownfieldgrids)
 ```
 
 ## Usage
-Create an OSM grid of brownfield land in Limehouse and the borough outline (i.e. Tower Hamlets). It also prints the borough in the command line.
+Create an OSM grid of brownfield land in Limehouse and the borough outline (i.e. Tower Hamlets). It also prints the borough in the command line. It may take some time to create the maps.
 ```
 brownfieldgrid_osm_borough("Limehouse, London")
 ```
