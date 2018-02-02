@@ -28,16 +28,6 @@ Grid map of OSM and surrounding National Land Use Database (NLUD) brownfields as
 brownfieldgrids::brownfieldgrid_osm_nlud("Limehouse, London")
 ```
 
-Map of OSM brownfield land by borough. Here's Tower Hamlets.
-```
-brownfieldgrids::brownfield_osm_borough_nogrid("Tower Hamlets")
-```
-
-Quick function for downloading and viewing OSM brownfield data in Greater London.
-```
-brownfieldgrids::brownfield_osm_londondata()
-```
-
 ## Applications
 The functions can be used to create exploratory maps of brownfields in London. The grid maps of OpenStreetMap brownfield land can potentially be used to critically analyse and identify spaces for brownfield redevelopment anywhere in Greater London. The grid maps can, for example, be exported and critically used as part of reports, academic articles or masterplans.
 
