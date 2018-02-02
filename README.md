@@ -33,7 +33,7 @@ Map of OSM brownfield land by borough.
 brownfield_osm_borough_nogrid("Tower Hamlets")
 ```
 
-Create a quick map of OSM brownfield land across Greater London.
+Quick function for downloading OSM brownfield data in Greater London.
 ```
 brownfield_osm_londondata()
 ```
