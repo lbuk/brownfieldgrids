@@ -40,7 +40,7 @@ brownfieldgrids::brownfieldgrid_osm_borough_nogrid("Tower Hamlets)
 
 Download OSM brownfield data from Greater London
 ```
-brownfieldgrids::brownfieldgrid_osm_londondata
+brownfieldgrids::brownfieldgrid_osm_londondata()
 ```
 
 ## Applications
