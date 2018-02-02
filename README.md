@@ -28,7 +28,7 @@ Grid map of OSM and surrounding National Land Use Database (NLUD) brownfields as
 brownfieldgrids::brownfieldgrid_osm_nlud("Limehouse, London")
 ```
 
-Map of OSM brownfield land by borough.
+Map of OSM brownfield land by borough. Here's Tower Hamlets.
 ```
 brownfieldgrids::brownfield_osm_borough_nogrid("Tower Hamlets")
 ```
