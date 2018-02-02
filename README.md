@@ -1,7 +1,7 @@
 # brownfieldgrids
 
 ## Overview
-An R package for creating grid maps of OpenStreetMap (OSM) brownfield land in London. The package provides functions for mapping OSM brownfield sites grid-by-grid and borough-by-borough in the city.
+An R package for creating grid maps of OpenStreetMap (OSM) brownfield land in London. The package provides functions for mapping OSM brownfield sites grid-by-grid and borough-by-borough in the city. Note: you'll require the latest version of RStudio.
 
 ## Installation
 ```
