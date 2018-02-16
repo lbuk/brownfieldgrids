@@ -13,7 +13,7 @@ library(brownfieldgrids)
 ```
 
 ## Usage
-Check out the package functions
+Check out the package functions.
 ```
 ??brownfieldgrids
 ```
