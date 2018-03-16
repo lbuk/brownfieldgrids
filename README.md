@@ -20,7 +20,7 @@ Check out the package functions.
 
 Create a Mile x Mile OSM grid of brownfield land in Limehouse and the borough outline (i.e. Tower Hamlets). It also prints the borough in the command line. It may take some time to create the maps.
 ```
-brownfieldgrids::brownfieldgrid_osm_borough("Limehouse, London")
+brownfieldgrids::brownfieldgrid_osm_borough("Limehouse")
 ```
 
 Map the OSM grid with a satellite basemap.
@@ -30,7 +30,7 @@ brownfieldgrids::brownfieldgrid_osm_satellite("Limehouse")
 
 Grid map of OSM and surrounding National Land Use Database (NLUD) brownfields as comparison.
 ```
-brownfieldgrids::brownfieldgrid_osm_nlud("Limehouse, London")
+brownfieldgrids::brownfieldgrid_osm_nlud("Limehouse")
 ```
 
 Map of OSM brownfield data by borough
