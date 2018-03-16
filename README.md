@@ -23,9 +23,9 @@ Create a Mile x Mile OSM grid of brownfield land in Limehouse and the borough ou
 brownfieldgrids::brownfieldgrid_osm_borough("Limehouse, London")
 ```
 
-Map the OSM grid with a satellite basemap. 
+Map the OSM grid with a satellite basemap.
 ```
-brownfieldgrids::brownfieldgrid_osm_satellite("Limehouse, London")
+brownfieldgrids::brownfieldgrid_osm_satellite("Limehouse")
 ```
 
 Grid map of OSM and surrounding National Land Use Database (NLUD) brownfields as comparison.
