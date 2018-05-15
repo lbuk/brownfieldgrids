@@ -46,7 +46,7 @@ brownfieldgrid_register_nlud = function(location) {
   data(brownfield_nlud_shp)
   london_brownfield_wgs_84 = spTransform(brownfield_nlud_shp, CRS(wgs84))
   
-  data(london_brownfield_reg_wgs_84)
+  data(brownfield_register_shp)
   london_brownfield_reg_wgs_84 = spTransform(london_brownfield_reg_wgs_84, CRS(wgs84))
   
   proj4string(london_brownfield_wgs_84) <- CRS(wgs84)
