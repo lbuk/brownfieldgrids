@@ -39,7 +39,7 @@ brownfieldgrids::brownfieldgrid_register_nlud("Limehouse")
 ```
 
 ## Applications
-The functions can be used to create exploratory maps of brownfields in London using OpenStreetMap, the Brownfield Register and the NLUD. The grid maps of OpenStreetMap brownfield land can potentially be used to critically analyse and identify spaces for brownfield redevelopment anywhere in Greater London. The grid maps can, for example, be exported and critically used as part of reports, academic articles or masterplans.
+The functions can be used to create exploratory maps of brownfields in London using OpenStreetMap, the Brownfield Register and the NLUD. The grid maps of OpenStreetMap brownfield land can potentially be used to critically analyse and identify spaces for brownfield redevelopment anywhere in Greater London. The grid maps can be exported and critically used as part of reports, academic articles or masterplans.
 
 ## Limitations
 Land use data – including data from OpenStreetMap, the National Land Use Database and the Brownfield Register – can vary in quality and coverage. Note: as of May 2018 not all London boroughs have provided Brownfield Register data to the London Datastore.
