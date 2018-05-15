@@ -65,6 +65,8 @@ brownfieldgrid_osm_borough = function(location) {
   if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{brownfield_wgs_84 = spTransform(brownfield_poly, CRS(wgs84))}
   if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{proj4string(brownfield_wgs_84) = CRS(wgs84)}
   
+  par(mfrow=c(1,1))
+
   # Plot the borough, bounding box and OSM brownfield land
   plot(borough)
   rect(xleft=left, ybottom=bottom, xright=right, ytop=top, xpd=NA, lwd=1.7, border='black')
