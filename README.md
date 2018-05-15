@@ -33,7 +33,7 @@ Grid map of OSM and surrounding National Land Use Database (NLUD) brownfields.
 brownfieldgrids::brownfieldgrid_osm_nlud("Limehouse")
 ```
 
-Comparative map of [Brownfield Register 2018](https://data.london.gov.uk/dataset/brownfield-land-register) and NLUD 2009-2010 brownfields.
+This function will create two grid maps - a map of NLUD 2009-2010 brownfields and a map of [Brownfield Register 2018](https://data.london.gov.uk/dataset/brownfield-land-register) brownfields.
 ```
 brownfieldgrids::brownfieldgrid_register_nlud("Limehouse")
 ```
