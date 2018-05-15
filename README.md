@@ -28,29 +28,24 @@ Map the OSM grid with a satellite basemap.
 brownfieldgrids::brownfieldgrid_osm_satellite("Limehouse")
 ```
 
-Grid map of OSM and surrounding National Land Use Database (NLUD) brownfields as comparison.
+Grid map of OSM and surrounding National Land Use Database (NLUD) brownfields.
 ```
 brownfieldgrids::brownfieldgrid_osm_nlud("Limehouse")
 ```
 
-Map of OSM brownfield data by borough
+Comparative map of [Brownfield Register 2018](https://data.london.gov.uk/dataset/brownfield-land-register) and NLUD 2009-2010 brownfields.
 ```
-brownfieldgrids::brownfieldgrid_osm_borough_nogrid("Tower Hamlets)
-```
-
-Download OSM brownfield data from Greater London
-```
-brownfieldgrids::brownfieldgrid_osm_londondata()
+brownfieldgrids::brownfieldgrid_register_nlud("Limehouse")
 ```
 
 ## Applications
-The functions can be used to create exploratory maps of brownfields in London. The grid maps of OpenStreetMap brownfield land can potentially be used to critically analyse and identify spaces for brownfield redevelopment anywhere in Greater London. The grid maps can, for example, be exported and critically used as part of reports, academic articles or masterplans.
+The functions can be used to create exploratory maps of brownfields in London using OpenStreetMap, the Brownfield Register and the NLUD. The grid maps of OpenStreetMap brownfield land can potentially be used to critically analyse and identify spaces for brownfield redevelopment anywhere in Greater London. The grid maps can, for example, be exported and critically used as part of reports, academic articles or masterplans.
 
 ## Limitations
 Land use data – including data from OpenStreetMap and the National Land Use Database – can vary in quality and coverage. Although some OpenStreetMap contributions are quality-checked, land use data from OpenStreetMap can vary in quality.
 
 ## Next Steps
-I will be disseminating the project to local authorities and relevant organisations in the city. Local authorities are in the process of compiling a Brownfield Register to be published in 2018. I'd like to incorporate the data as part of the package as soon as it has been completed. I'd like to further explore how machine learning and remote sensing can be used to analyse land use, particularly brownfields, in cities.
+I will be disseminating the project to local authorities and relevant organisations in the city. Local authorities are in the process of compiling a Brownfield Register to be published from January 2018 onwards. Brownfieldgrids provides a function to compare the latest Brownfield Register data (updated weekly) with the National Land Use Database (NLUD). I'd also like to explore other methods such as machine learning and remote sensing.
 
 ## License
 Copyright 2018 Liam Bolton
