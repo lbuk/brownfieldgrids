@@ -42,10 +42,10 @@ brownfieldgrids::brownfieldgrid_register_nlud("Limehouse")
 The functions can be used to create exploratory maps of brownfields in London using OpenStreetMap, the Brownfield Register and the NLUD. The grid maps of OpenStreetMap brownfield land can potentially be used to critically analyse and identify spaces for brownfield redevelopment anywhere in Greater London. The grid maps can, for example, be exported and critically used as part of reports, academic articles or masterplans.
 
 ## Limitations
-Land use data – including data from OpenStreetMap and the National Land Use Database – can vary in quality and coverage. Although some OpenStreetMap contributions are quality-checked, land use data from OpenStreetMap can vary in quality.
+Land use data – including data from OpenStreetMap, the National Land Use Database and the Brownfield Register – can vary in quality and coverage. Note: as of May 2018 not all London boroughs have provided Brownfield Register data to the London Datastore.
 
 ## Next Steps
-I will be disseminating the project to local authorities and relevant organisations in the city. Local authorities are in the process of compiling a Brownfield Register to be published from January 2018 onwards. Brownfieldgrids provides a function to compare the latest Brownfield Register data (updated weekly) with the National Land Use Database (NLUD). I'd also like to explore other methods such as machine learning and remote sensing.
+I will be disseminating the project to local authorities and relevant organisations in the city. Local authorities are in the process of compiling a Brownfield Register to be published from 2018 onwards. The brownfieldgrids package provides a function to compare the latest Brownfield Register data (updated weekly) with the National Land Use Database (NLUD).
 
 ## License
 Copyright 2018 Liam Bolton
