@@ -18,41 +18,31 @@ brownfieldgrid_osm_satellite = function(location) {
   lon = location$lon
   lat = location$lat
   
-  src = osmsource_api()
-  
-  # Set the bounding box
+  # Bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
-  # Matrix for plotting the bounding box
   bb_mat = as.matrix(bb)
   left = bb_mat[1,1]
   bottom = bb_mat[2,1]
   right = bb_mat[3,1]
   top = bb_mat[4,1]
   
-  # Extract OSM data from the bounding box
-  Mile = get_osm(bb, source = src)
+  bb <- opq(bbox = bb)
+  b = bb  %>% add_osm_feature(key = 'highway')
+  s_b <- osmdata_sp(b)
+  sp::plot(s_b$osm_lines)
+  
+  st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
+  s_st <- osmdata_sp(st)
+  sp::plot(s_st$osm_polygons, add = T)
   
   wgs84 = '+proj=longlat +datum=WGS84'
   
-  # Extract OSM brownfield land as polygons
-  brownfield_ids = find(Mile, way(tags(k == "landuse" & v == "brownfield")))
-  brownfield_ids = find_down(Mile, way(brownfield_ids))
-  if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{br = subset(Mile, ids = brownfield_ids)}
-  if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{brownfield_poly = as_sp(br, "polygons")}
+  highway_wgs_84 = spTransform(s_b$osm_lines, CRS(wgs84))
+  if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{brownfield_wgs_84 = spTransform(s_st$osm_polygons, CRS(wgs84))}
   
-  # Extract highway lines (i.e. road network)
-  highway_ids = find(Mile, way(tags(k == "highway")))
-  highway_ids = find_down(Mile, way(highway_ids))
-  highway = subset(Mile, ids = highway_ids)
-  highway_lines = as_sp(highway, "lines")
-  
-  # Tranform
-  highway_wgs84 = spTransform(highway_lines, CRS(wgs84))
-  if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{brownfield_wgs_84 = spTransform(brownfield_poly, CRS(wgs84))}
-  
-  proj4string(highway_wgs84) <- CRS(wgs84)
-  if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{proj4string(brownfield_wgs_84) = CRS(wgs84)}
+  proj4string(highway_wgs_84) <- CRS(wgs84)
+  proj4string(brownfield_wgs_84) <- CRS(wgs84)
   
   # Interactive Leaflet map of OSM brownfield land and bounding box
   leaflet() %>% addProviderTiles(providers$Esri.WorldImagery) %>%

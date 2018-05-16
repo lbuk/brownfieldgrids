@@ -12,37 +12,39 @@
 brownfieldgrid_osm_borough = function(location) {
   
   # Geocode the location
-  location = geocode(location)
+  location = geocode("Newham")
   
   # Extract the latitude and longitude
   lon = location$lon
   lat = location$lat
   
-  # Set the bounding box
+  # Bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
-  # Matrix for plotting the bounding box
   bb_mat = as.matrix(bb)
   left = bb_mat[1,1]
   bottom = bb_mat[2,1]
   right = bb_mat[3,1]
   top = bb_mat[4,1]
   
-  data = data.frame(lon, lat)
+  bb <- opq(bbox = bb)
   
-  # Download the London borough shapefile
-  data(london_boro_shp)
+  st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
+  s_st <- osmdata_sp(st)
   
   wgs84 = '+proj=longlat +datum=WGS84'
   
-  # Transform
-  london_boro_map <- spTransform(london_boro_shp, CRS(wgs84))
+  data(london_boro_shp)
+  
+  london_boro_shp = spTransform(london_boro_shp, CRS(wgs84))
+  
+  if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{brownfield_wgs_84 = spTransform(s_st$osm_polygons, CRS(wgs84))}
   
   # Spatial points dataframe for the centre of bounding box
   SP = SpatialPointsDataFrame(coords = data, data = data, proj4string = CRS(wgs84))
   
   # Bounding box point in London borough polygon
-  df_borough = over(SP, london_boro_map[,"NAME"])
+  df_borough = over(SP, london_boro_shp[,"NAME"])
   
   # Borough for plotting
   borough = copy(london_boro_shp[london_boro_shp@data$NAME==df_borough[1]$NAME,])
@@ -51,26 +53,14 @@ brownfieldgrid_osm_borough = function(location) {
   borough = spTransform(borough, CRS(wgs84))
   
   proj4string(borough) = CRS(wgs84)
-  
-  src = osmsource_api()
-  
-  # Extract OSM data from bounding box
-  Mile = get_osm(bb, source = src)
-  
-  # OSM brownfield land as polygons and transform
-  brownfield_ids = find(Mile, way(tags(k == "landuse" & v == "brownfield")))
-  brownfield_ids = find_down(Mile, way(brownfield_ids))
-  if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{br = subset(Mile, ids = brownfield_ids)}
-  if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{brownfield_poly = as_sp(br, "polygons")}
-  if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{brownfield_wgs_84 = spTransform(brownfield_poly, CRS(wgs84))}
-  if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{proj4string(brownfield_wgs_84) = CRS(wgs84)}
+  proj4string(brownfield_wgs_84) <- CRS(wgs84)
   
   par(mfrow=c(1,1))
-
+  
   # Plot the borough, bounding box and OSM brownfield land
   plot(borough)
   rect(xleft=left, ybottom=bottom, xright=right, ytop=top, xpd=NA, lwd=1.7, border='black')
-  if(length(brownfield_ids$node_ids) == 0) {brownfield_osm = 0} else{plot(brownfield_wgs_84, add = T, col = "#38f7ce", xlab = "")}
+  if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{sp::plot(brownfield_wgs_84, add = T, col = "#38f7ce", xlab = "")}
   
   # Scale bar
   addscalebar(widthhint = 0.3,
