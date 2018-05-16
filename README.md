@@ -25,12 +25,12 @@ Check out the package functions.
 ??brownfieldgrids
 ```
 
-Create a Mile x Mile OSM grid of brownfield land in Kensington and the borough outline. It also prints the borough in the command line. It may take some time to create the maps.
+Create a Mile x Mile OSM grid of brownfield land in Silvertown and the borough outline. It also prints the borough in the command line.
 ```
 brownfieldgrids::brownfieldgrid_osm_borough("Silvertown, London")
 ```
 
-Interactive Mile x Mile grid map the OSM brownfields in Kensington.
+Interactive Mile x Mile grid map the OSM brownfields in Silvertown.
 ```
 brownfieldgrids::brownfieldgrid_osm_satellite("Silvertown, London")
 ```
