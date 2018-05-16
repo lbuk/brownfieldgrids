@@ -25,7 +25,7 @@ Check out the package functions.
 ??brownfieldgrids
 ```
 
-Create a Mile x Mile OSM grid of brownfield land in Ladbroke Grove and the borough outline. It also prints the borough in the command line.
+Create a Mile x Mile OSM grid of brownfield land in Ladbroke Grove and the borough outline. It also prints the borough in the console.
 ```
 brownfieldgrids::brownfieldgrid_osm_borough("Ladbroke Grove, London")
 ```
