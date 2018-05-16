@@ -36,8 +36,6 @@ brownfieldgrid_osm_borough = function(location) {
   
   data(london_boro_shp)
   
-  data = data.frame(lon, lat)
-  
   london_boro_shp = spTransform(london_boro_shp, CRS(wgs84))
   
   if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{brownfield_wgs_84 = spTransform(s_st$osm_polygons, CRS(wgs84))}
@@ -55,7 +53,7 @@ brownfieldgrid_osm_borough = function(location) {
   borough = spTransform(borough, CRS(wgs84))
   
   proj4string(borough) = CRS(wgs84)
-  proj4string(brownfield_wgs_84) <- CRS(wgs84)
+  if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{proj4string(brownfield_wgs_84) <- CRS(wgs84)}
   
   par(mfrow=c(1,1))
   
