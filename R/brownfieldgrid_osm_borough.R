@@ -12,7 +12,7 @@
 brownfieldgrid_osm_borough = function(location) {
   
   # Geocode the location
-  location = geocode("Newham")
+  location = geocode(location)
   
   # Extract the latitude and longitude
   lon = location$lon
