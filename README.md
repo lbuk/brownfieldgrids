@@ -25,22 +25,22 @@ Check out the package functions.
 ??brownfieldgrids
 ```
 
-Create a Mile x Mile OSM grid of brownfield land in Silvertown and the borough outline. It also prints the borough in the command line.
+Create a Mile x Mile OSM grid of brownfield land in Ladbroke Grove and the borough outline. It also prints the borough in the command line.
 ```
-brownfieldgrids::brownfieldgrid_osm_borough("Silvertown, London")
+brownfieldgrids::brownfieldgrid_osm_borough("Ladbroke Grove, London")
 ```
 
-Interactive Mile x Mile grid map the OSM brownfields in Silvertown.
+Interactive Mile x Mile grid map the OSM brownfields in Ladbroke Grove.
 ```
-brownfieldgrids::brownfieldgrid_osm_satellite("Silvertown, London")
+brownfieldgrids::brownfieldgrid_osm_satellite("Ladbroke Grove, London")
 ```
 
 Grid map of OSM and [National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review) 2009-2010 brownfield land.
 ```
-brownfieldgrids::brownfieldgrid_osm_nlud("Silvertown, London")
+brownfieldgrids::brownfieldgrid_osm_nlud("Ladbroke Grove, London")
 ```
 
-Map of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) 2018 brownfield land for comparison.
+Map of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) 2018 brownfield land in Silvertown for comparison.
 ```
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
