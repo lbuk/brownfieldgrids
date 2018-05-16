@@ -27,11 +27,9 @@ brownfieldgrid_register_nlud = function(location) {
   bb <- opq(bbox = bb)
   b = bb  %>% add_osm_feature(key = 'highway')
   s_b <- osmdata_sp(b)
-  sp::plot(s_b$osm_lines)
   
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
   s_st <- osmdata_sp(st)
-  sp::plot(s_st$osm_polygons, add = T)
   
   wgs84 = '+proj=longlat +datum=WGS84'
   

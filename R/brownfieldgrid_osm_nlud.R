@@ -30,6 +30,7 @@ brownfieldgrid_osm_nlud = function(location) {
   
   bb <- opq(bbox = bb)
   b = bb  %>% add_osm_feature(key = 'highway')
+  s_b = osmdata_sp(b)
   
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
   s_st <- osmdata_sp(st)
