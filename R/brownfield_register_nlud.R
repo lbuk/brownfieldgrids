@@ -66,7 +66,7 @@ brownfieldgrid_register_nlud = function(location) {
   
   title(main = "", xlab="Data Source: NLUD 2009-10, Brownfield Register 2018", cex = 0.6)
 
-  add_legend <- function(...) {
+  add_legend_1 <- function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
                 mar=c(0, 0, 0, 0), new=TRUE)
     on.exit(par(opar))
@@ -74,8 +74,20 @@ brownfieldgrid_register_nlud = function(location) {
     legend(...)
   }
   
-  palette = c("#0056b2", "#67a9cf", "black")
-  land = c("NLUD", "Register", "Streets")
-  add_legend(-0.30, 1.1, legend=land, pch=19, col=palette, bty='n', horiz = T, cex=0.9, title = "")
+  add_legend_2 <- function(...) {
+    opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
+                mar=c(0, 0, 0, 0), new=TRUE)
+    on.exit(par(opar))
+    plot(0, 0, type='n', bty='n', xaxt='n', yaxt='n')
+    legend(...)
+  }
+  
+  palette_1 = c("#0056b2", "black")
+  land_1 = c("NLUD", "Streets")
+  add_legend_1(-0.75, 0.8, legend=land_1, pch=19, col=palette_1, bty='n', horiz = T, cex=0.9, title = "")
+  
+  palette_2 = c("#67a9cf", "black")
+  land_2 = c("Register", "Streets")
+  add_legend_2(0.29, 0.8, legend=land_2, pch=19, col=palette_2, bty='n', horiz = T, cex=0.9, title = "")
   
 }
