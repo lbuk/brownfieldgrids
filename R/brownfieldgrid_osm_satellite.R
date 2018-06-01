@@ -30,7 +30,6 @@ brownfieldgrid_osm_satellite = function(location) {
   bb <- opq(bbox = bb)
   b = bb  %>% add_osm_feature(key = 'highway')
   s_b <- osmdata_sp(b)
-  sp::plot(s_b$osm_lines)
   
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
   s_st <- osmdata_sp(st)
