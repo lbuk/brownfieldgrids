@@ -25,17 +25,17 @@ Check out the package functions.
 ??brownfieldgrids
 ```
 
-Create a Mile x Mile OSM grid of brownfield land in Ladbroke Grove and the borough outline. It also prints the borough in the console.
+Create a Mile x Mile OSM grid of brownfield land in Woolwich Dockyard and the borough outline. It also prints the borough in the console.
 ```
 brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
 
-Interactive Mile x Mile grid map the OSM brownfields in Ladbroke Grove.
+Interactive Mile x Mile grid map the OSM brownfields in Woolwich Dockyard.
 ```
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
 
-Grid map of OSM and [National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review) 2009-2010 brownfield land.
+Grid map of OSM and [National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review) 2009-2010 brownfield land at Woolwich Dockyard.
 ```
 brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
