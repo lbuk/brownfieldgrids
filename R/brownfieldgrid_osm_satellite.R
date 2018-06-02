@@ -28,18 +28,14 @@ brownfieldgrid_osm_satellite = function(location) {
   top = bb_mat[4,1]
   
   bb <- opq(bbox = bb)
-  b = bb  %>% add_osm_feature(key = 'highway')
-  s_b <- osmdata_sp(b)
   
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
   s_st <- osmdata_sp(st)
   
   wgs84 = '+proj=longlat +datum=WGS84'
   
-  highway_wgs_84 = spTransform(s_b$osm_lines, CRS(wgs84))
   if(nrow(s_st$osm_polygons) == 0) {print("Note: There are no OSM brownfield sites in this grid.")} else{brownfield_wgs_84 = spTransform(s_st$osm_polygons, CRS(wgs84))}
   
-  proj4string(highway_wgs_84) <- CRS(wgs84)
   proj4string(brownfield_wgs_84) <- CRS(wgs84)
   
   # Interactive Leaflet map of OSM brownfield land and bounding box
