@@ -33,7 +33,6 @@ brownfieldgrid_osm_satellite = function(location) {
   
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
   s_st <- osmdata_sp(st)
-  sp::plot(s_st$osm_polygons, add = T)
   
   wgs84 = '+proj=longlat +datum=WGS84'
   
