@@ -37,7 +37,7 @@ brownfieldgrid_osm_satellite = function(location) {
   wgs84 = '+proj=longlat +datum=WGS84'
   
   highway_wgs_84 = spTransform(s_b$osm_lines, CRS(wgs84))
-  if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{brownfield_wgs_84 = spTransform(s_st$osm_polygons, CRS(wgs84))}
+  if(nrow(s_st$osm_polygons) == 0) {print("Note: There are no OSM brownfield sites in this grid.")} else{brownfield_wgs_84 = spTransform(s_st$osm_polygons, CRS(wgs84))}
   
   proj4string(highway_wgs_84) <- CRS(wgs84)
   proj4string(brownfield_wgs_84) <- CRS(wgs84)
