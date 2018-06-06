@@ -65,8 +65,8 @@ brownfieldgrid_osm_borough = function(location) {
   if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{sp::plot(brownfield_wgs_84, add = T, col = "#38f7ce", xlab = "")}
   
   # Scale bar
-  addscalebar(widthhint = 0.3,
-              unitcategory = "imperial", htin = 0.1, padin = c(0.9, 0.1),
+  addscalebar(widthhint = 0.2,
+              unitcategory = "imperial", htin = 0.1, padin = c(0.85, 0.1),
               style = "ticks", lwd = 0.9, 
               linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.6,
               label.col = "black", pos = "bottomright")
@@ -90,6 +90,6 @@ brownfieldgrid_osm_borough = function(location) {
   # Print the borough the bounding box is centred on in the terminal
   boro = as.character(df_borough[1]$NAME)
   
-  cat("Brownfield Grid centred on the London Borough of... ", boro)
+  cat("Brownfield grid centred on the London local authority of... ", boro)
   
 }
