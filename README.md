@@ -20,7 +20,7 @@ library(osmdata)
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 ```
-Note: there may be an issue with the sp package, which will require updating the packages using 'update.packages(ask=F)'. If you have any problems with the package (e.g. installation) then email me at liam.bolton.17@ucl.ac.uk
+If you have any problems with the package (e.g. installation) then email me at liam.bolton.17@ucl.ac.uk or post on the Issues page.
 
 ## Usage
 Check out the package functions.
