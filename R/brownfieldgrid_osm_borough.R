@@ -85,7 +85,7 @@ brownfieldgrid_osm_borough = function(location) {
   palette = c("#38f7ce", "black")
   land = c("OSM", "Grid")
   
-  add_legend(-0.10, 0.99, legend=land, pch=19, col=palette, bty='n', horiz = T, cex=0.9, title = "")
+  add_legend(-0.91, 0.99, legend=land, pch=19, col=palette, bty='n', horiz = T, cex=0.9, title = "")
   
   # Print the borough the bounding box is centred on in the terminal
   boro = as.character(df_borough[1]$NAME)
