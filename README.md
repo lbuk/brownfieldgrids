@@ -9,6 +9,9 @@ An R package for creating grid maps of brownfield land in London.
 install.packages("devtools")
 library(devtools)
 
+# Updata packages
+update.packages(ask=F)
+
 # Install the dev version of osmdata
 install_github("ropensci/osmdata")
 library(osmdata)
