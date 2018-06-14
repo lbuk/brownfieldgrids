@@ -42,8 +42,12 @@ brownfieldgrid_register_nlud = function(location) {
   data(brownfield_register_shp)
   london_brownfield_reg_wgs_84 = spTransform(london_brownfield_reg_wgs_84, CRS(wgs84))
   
+  data(brownfield_register_points)
+  london_brownfield_reg_points_wgs_84 = spTransform(brownfield_register_points, CRS(wgs84))
+  
   proj4string(london_brownfield_wgs_84) <- CRS(wgs84)
   proj4string(london_brownfield_reg_wgs_84) <- CRS(wgs84)
+  proj4string(brownfield_register_points) <- CRS(wgs84)
   proj4string(highway_wgs_84) <- CRS(wgs84)
   
   par(mfrow=c(1,2))
@@ -60,6 +64,7 @@ brownfieldgrid_register_nlud = function(location) {
   
   plot(highway_wgs_84)
   plot(london_brownfield_reg_wgs_84, col = "#67a9cf", add = T, main = "")
+  plot(brownfield_register_points, col = "#67a9cf", pch = 20, add = T)
   rect(xleft=left, ybottom=bottom, xright=right, ytop=top, xpd=NA, lwd=1.7, border='black')
   
   title(main = "", xlab="Data Source: NLUD 2009-10, Brownfield Register 2018", cex = 0.6)
