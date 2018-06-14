@@ -20,7 +20,7 @@ library(osmdata)
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 ```
-If you have any problems with the package (e.g. installation) then email me at liam.bolton.17@ucl.ac.uk or post on the Issues page of the repository.
+If you have any problems with the package (e.g. installation) then email me at liam.bolton.17@ucl.ac.uk or post on the Issues page of the repository. brownfieldgrid users may have to re-install the sp package, for example.
 
 ## Usage
 Create a Mile x Mile OSM grid of brownfield land in Woolwich Dockyard and the borough outline. It also prints the borough in the console.
@@ -50,7 +50,7 @@ The brownfieldgrids package can be used to create exploratory maps of brownfield
 Land use data – including OpenStreetMap, the National Land Use Database (NLUD) and the Brownfield Register – can vary in quality and coverage. As of May 2018 not all London boroughs have uploaded their Brownfield Register data to the London Datastore, which means the NLUD data will be temporarily used. brownfieldgrids will update the Brownfield Register data from the London Datastore weekly.
 
 ## Next Steps
-OpenStreetMap data can be useful to local authorities and planners. The package will be disseminated to various organisations in London.
+OpenStreetMap data in conjunction with data from the NLUD and the Brownfield Register could be useful to planners, local authorities and developers. The package will be disseminated to organisations in London.
 
 ## License
 Copyright 2018 Liam Bolton
