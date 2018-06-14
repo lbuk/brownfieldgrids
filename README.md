@@ -23,11 +23,6 @@ library(brownfieldgrids)
 If you have any problems with the package (e.g. installation) then email me at liam.bolton.17@ucl.ac.uk or post on the Issues page of the repository.
 
 ## Usage
-Check out the package functions.
-```
-??brownfieldgrids
-```
-
 Create a Mile x Mile OSM grid of brownfield land in Woolwich Dockyard and the borough outline. It also prints the borough in the console.
 ```
 brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
