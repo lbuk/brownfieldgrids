@@ -42,11 +42,15 @@ brownfieldgrid_register_nlud = function(location) {
   data(brownfield_register_shp)
   london_brownfield_reg_wgs_84 = spTransform(london_brownfield_reg_wgs_84, CRS(wgs84))
   
+  data(brownfield_register_shapefile)
+  brownfield_register_shapefile = spTransform(brownfield_register_shapefile, CRS(wgs84))
+  
   data(brownfield_register_points)
   london_brownfield_reg_points_wgs_84 = spTransform(brownfield_register_points, CRS(wgs84))
   
   proj4string(london_brownfield_wgs_84) <- CRS(wgs84)
   proj4string(london_brownfield_reg_wgs_84) <- CRS(wgs84)
+  proj4string(brownfield_register_shapefile) <- CRS(wgs84)
   proj4string(brownfield_register_points) <- CRS(wgs84)
   proj4string(highway_wgs_84) <- CRS(wgs84)
   
@@ -54,6 +58,7 @@ brownfieldgrid_register_nlud = function(location) {
   
   plot(highway_wgs_84)
   plot(london_brownfield_wgs_84, col = "#0056b2", add = T, main = "")
+  plot(brownfield_register_shapefile, col = "#0056b2", add = T, main = "")
   rect(xleft=left, ybottom=bottom, xright=right, ytop=top, xpd=NA, lwd=1.7, border='black')
   
   addscalebar(widthhint = 0.3,
