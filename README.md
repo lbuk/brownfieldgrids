@@ -43,10 +43,11 @@ Map of NLUD 2009-2010 and 2018 [Brownfield Register](https://data.london.gov.uk/
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
 
-## Applications and Data
+## Applications
 The brownfieldgrids package can be used to create exploratory maps of brownfield land in London using a variety of land use datasets including: OSM, the NLUD and the 2018 Brownfield Register. The grid maps can be exported from R and critically used as part of reports, articles or masterplans.
 
-OpenStreetMap is a platform for crowdsourced mapping and citizen-led geospatial data. This package makes use of OpenStreetMap brownfields, which it describes as: “land scheduled for new development which was previously used for industrial purposes or some commercial uses”. It also makes use of open data from the 2009-2010 NLUD and the 2018 Brownfield Register. A newly-created Brownfield Register dataset has been created that contains the locations of brownfield land at 32 of London's 33 local authorities and several development corporations. Of those 33, 9 have provided points-based data online.
+## Data
+OpenStreetMap is a platform for crowdsourced mapping and citizen-led geospatial data. This package makes use of OpenStreetMap brownfields, which it describes as: “land scheduled for new development which was previously used for industrial purposes or some commercial uses”. It also makes use of open data from the 2009-2010 NLUD and the 2018 Brownfield Register. A Brownfield Register dataset has been created that contains the locations of brownfield land at 32 of London's 33 local authorities and several development corporations. Of those 32, 9 have provided points-based data online.
 
 ## Limitations
 Land use data – including OpenStreetMap, the National Land Use Database (NLUD) and the Brownfield Register – can vary in quality and coverage. As of June 2018 not all London boroughs have uploaded their Brownfield Register data to the London Datastore and the London Borough of Havering has not published its data online. brownfieldgrids will update the Brownfield Register data from the London Datastore regularly.
