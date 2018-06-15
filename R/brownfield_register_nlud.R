@@ -59,7 +59,7 @@ brownfieldgrid_register_nlud = function(location) {
   addscalebar(widthhint = 0.3,
               unitcategory = "metric", htin = 0.1, padin = c(0.37, 0.6),
               style = "ticks", lwd = 0.9, 
-              linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.6,
+              linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.55,
               label.col = "black", pos = "bottomright")
   
   plot(highway_wgs_84)
