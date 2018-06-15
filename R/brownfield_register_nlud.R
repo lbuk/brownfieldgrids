@@ -65,7 +65,7 @@ brownfieldgrid_register_nlud = function(location) {
   plot(highway_wgs_84)
   
   plot(brownfield_register_shapefile, col = "#67a9cf", add = T, main = "")
-  plot(brownfield_register_points, col = "#67a9cf", add = T, main = "")
+  plot(brownfield_register_points, col = "#67a9cf", pch=19, add = T, main = "")
   rect(xleft=left, ybottom=bottom, xright=right, ytop=top, xpd=NA, lwd=1.7, border='black')
   
   title(main = "", xlab="Data Source: NLUD 2009-10, Brownfield Register 2018", cex = 0.6)
@@ -88,10 +88,10 @@ brownfieldgrid_register_nlud = function(location) {
   
   palette_1 = c("#0056b2", "black")
   land_1 = c("NLUD", "Streets")
-  add_legend_1(-0.75, 0.8, legend=land_1, pch=19, col=palette_1, bty='n', horiz = T, cex=0.9, title = "")
+  add_legend_1(-0.75, 0.8, legend=land_1, pch=19, col=palette_1, bty='n', horiz = T, cex=1.1, title = "")
   
   palette_2 = c("#67a9cf", "black")
   land_2 = c("Register", "Streets")
-  add_legend_2(0.29, 0.8, legend=land_2, pch=19, col=palette_2, bty='n', horiz = T, cex=0.9, title = "")
+  add_legend_2(0.29, 0.8, legend=land_2, pch=19, col=palette_2, bty='n', horiz = T, cex=1.1, title = "")
   
 }
