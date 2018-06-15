@@ -88,10 +88,10 @@ brownfieldgrid_register_nlud = function(location) {
   
   palette_1 = c("#0056b2", "black")
   land_1 = c("NLUD", "Streets")
-  add_legend_1(-0.75, 0.8, legend=land_1, pch=20, col=palette_1, bty='n', horiz = T, cex=0.95, title = "")
+  add_legend_1(-0.77, 0.8, legend=land_1, pch=19, col=palette_1, bty='n', horiz = T, cex=0.95, title = "")
   
   palette_2 = c("#67a9cf", "black")
   land_2 = c("Register", "Streets")
-  add_legend_2(0.29, 0.8, legend=land_2, pch=20, col=palette_2, bty='n', horiz = T, cex=0.95, title = "")
+  add_legend_2(0.25, 0.8, legend=land_2, pch=19, col=palette_2, bty='n', horiz = T, cex=0.95, title = "")
   
 }
