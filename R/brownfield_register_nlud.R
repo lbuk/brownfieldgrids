@@ -57,7 +57,7 @@ brownfieldgrid_register_nlud = function(location) {
   rect(xleft=left, ybottom=bottom, xright=right, ytop=top, xpd=NA, lwd=1.7, border='black')
   
   addscalebar(widthhint = 0.3,
-              unitcategory = "metric", htin = 0.1, padin = c(0.37, 0.99),
+              unitcategory = "metric", htin = 0.1, padin = c(0.37, 0.75),
               style = "ticks", lwd = 0.9, 
               linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.6,
               label.col = "black", pos = "bottomright")
