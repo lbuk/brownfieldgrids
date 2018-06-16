@@ -64,7 +64,7 @@ brownfieldgrid_osm_nlud = function(location) {
               style = "ticks", lwd = 0.9, plotepsg = 4326,
               linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.6,
               label.col = "black", pos = "bottomright")
-  title(main = "", xlab="Data Source: OSM Land Use, NLUD-PDL 2009-10", cex = 0.6)
+  title(main = "", xlab="Data: OSM, NLUD-PDL 2009-10", cex = 0.6)
   
   # Function foor plotting legend
   add_legend <- function(...) {
