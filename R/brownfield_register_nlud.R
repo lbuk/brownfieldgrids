@@ -56,9 +56,11 @@ brownfieldgrid_register_nlud = function(location) {
   plot(london_brownfield_wgs_84, col = "#0056b2", add = T, main = "")
   rect(xleft=left, ybottom=bottom, xright=right, ytop=top, xpd=NA, lwd=1.7, border='black')
   
+  title(main = "", xlab="Data: NLUD", cex = 0.6)
+  
   addscalebar(widthhint = 0.3,
               unitcategory = "metric", htin = 0.1, padin = c(0.37, 0.6),
-              style = "ticks", lwd = 0.9, 
+              style = "ticks", lwd = 0.9, plotepsg = 4326,
               linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.55,
               label.col = "black", pos = "bottomright")
   
@@ -68,7 +70,7 @@ brownfieldgrid_register_nlud = function(location) {
   plot(brownfield_register_points, col = "#67a9cf", pch=20, add = T, main = "")
   rect(xleft=left, ybottom=bottom, xright=right, ytop=top, xpd=NA, lwd=1.7, border='black')
   
-  title(main = "", xlab="Data Source: NLUD 2009-10, Brownfield Register 2018", cex = 0.6)
+  title(main = "", xlab="Data: Brownfield Register", cex = 0.6)
 
   add_legend_1 <- function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
