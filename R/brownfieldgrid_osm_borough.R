@@ -70,7 +70,7 @@ brownfieldgrid_osm_borough = function(location) {
               style = "ticks", lwd = 0.9, plotepsg = 4326,
               linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.6,
               label.col = "black", pos = "bottomright")
-  title(main = "", xlab="Data Source: OSM Land Use", cex = 0.6)
+  title(main = "", xlab="Data: OSM", cex = 0.6)
   
   # Function for plotting legend
   add_legend <- function(...) {
