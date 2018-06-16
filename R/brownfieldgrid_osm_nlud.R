@@ -77,7 +77,7 @@ brownfieldgrid_osm_nlud = function(location) {
   
   # Plot the legend
   palette = c("#38f7ce", "#0056b2", "black")
-  land = c("OSM", "NLUD", "Street Grid")
-  add_legend(-0.51, 1.1, legend=land, pch=19, col=palette, bty='n', horiz = T, cex=0.9, title = "")
+  land = c("OSM", "NLUD", "Streets")
+  add_legend(-0.49, 1.1, legend=land, pch=19, col=palette, bty='n', horiz = T, cex=0.9, title = "")
   
 }
