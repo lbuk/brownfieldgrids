@@ -61,7 +61,7 @@ brownfieldgrid_osm_nlud = function(location) {
   # Scale bar and title
   addscalebar(widthhint = 0.1,
               unitcategory = "metric", htin = 0.1, padin = c(0.70, 0.1),
-              style = "ticks", lwd = 0.9, 
+              style = "ticks", lwd = 0.9, plotepsg = 4326,
               linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.6,
               label.col = "black", pos = "bottomright")
   title(main = "", xlab="Data Source: OSM Land Use, NLUD-PDL 2009-10", cex = 0.6)
