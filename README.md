@@ -23,12 +23,12 @@ library(brownfieldgrids)
 If you have any problems with the package (e.g. installation) then email me at liam.bolton.17@ucl.ac.uk or post on the Issues page of the repository. brownfieldgrid users may have to re-install the sp package, for example.
 
 ## Usage
-Create a Mile x Mile OpenStreetMap (OSM) grid of brownfield land in Woolwich Dockyard and the borough outline. It also prints the borough in the console.
+Create a mile x mile OpenStreetMap (OSM) grid of brownfield land in Woolwich Dockyard and the borough outline. It also prints the borough in the console.
 ```
 brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
 
-Interactive Mile x Mile grid map the OSM brownfields in Woolwich Dockyard.
+Interactive mile x mile grid map the OSM brownfields in Woolwich Dockyard.
 ```
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
@@ -53,7 +53,7 @@ OpenStreetMap (OSM) is a platform for crowdsourced mapping and citizen-led geosp
 Land use data – including OpenStreetMap, the NLUD and the Brownfield Register – can vary in quality and coverage. As of June 2018 not all of London's local authorities have uploaded their Brownfield Register data to the London Datastore and the London Borough of Havering has not published its data online. brownfieldgrids will update the Brownfield Register data from the London Datastore regularly.
 
 ## Next Steps
-OpenStreetMap data in conjunction with data from the NLUD and the Brownfield Register could be useful to planners, local authorities and developers. The package will be disseminated to organisations in London.
+OpenStreetMap data in conjunction with data from Brownfield Register and the NLUD could be useful to planners, local authorities and developers. The package will be disseminated to organisations in London.
 
 ## License
 Copyright 2018 Liam Bolton
