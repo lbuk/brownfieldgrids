@@ -50,7 +50,7 @@ The brownfieldgrids package can be used to create exploratory maps of brownfield
 OpenStreetMap (OSM) is a platform for crowdsourced mapping and citizen-led geospatial data. This package makes use of OpenStreetMap brownfields, which it describes as: “land scheduled for new development which was previously used for industrial purposes or some commercial uses”. The package also makes use of open data from the 2018 Brownfield Register and the 2009-2010 NLUD. A 2018 Brownfield Register dataset has now been created that contains the locations of brownfield land at 32 of London's 33 local authorities and several development corporations. Users can now also download this data.
 
 ## Limitations
-Land use data – including OpenStreetMap, the NLUD and the Brownfield Register – can vary in quality and coverage. As of June 2018 not all of London's local authorities have uploaded their Brownfield Register data to the London Datastore and the London Borough of Havering has not published its data online. brownfieldgrids will update the Brownfield Register data from the London Datastore regularly. 
+Land use data – including OpenStreetMap, the NLUD and the Brownfield Register – can vary in quality and coverage. As of June 2018 not all of London's local authorities have uploaded their Brownfield Register data to the London Datastore and the London Boroughs of Havering has not published its data online. brownfieldgrids will update the Brownfield Register data from the London Datastore regularly. 
 
 ## Next Steps
 OpenStreetMap data in conjunction with data from Brownfield Register and the NLUD could be useful to planners, local authorities and developers. The package will be disseminated to organisations in London. 
