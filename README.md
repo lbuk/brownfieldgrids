@@ -43,7 +43,7 @@ Map of NLUD 2009-2010 and 2018 [Brownfield Register](https://data.london.gov.uk/
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
 
-Users can download the London Brownfield Register dataset (exc. London Borough of Havering). To find out more about the data, read the [Brownfield Land Registers Data Standard].(https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/653657/BrownfieldLandRegisters_-_DataStandard.pdf) 
+Users can download the London Brownfield Register dataset (exc. London Borough of Havering). To find out more about the data, read the [Brownfield Land Registers Data Standard](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/653657/BrownfieldLandRegisters_-_DataStandard.pdf). 
 ```
 data("london_brownfield_register")
 ```
