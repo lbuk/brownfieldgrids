@@ -43,6 +43,11 @@ Map of NLUD 2009-2010 and 2018 [Brownfield Register](https://data.london.gov.uk/
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
 
+Users can now download the London Brownfield Register dataset (exc. London Borough of Havering)
+```
+data("london_brownfield_register")
+```
+
 ## Applications
 The brownfieldgrids package can be used to create exploratory maps of brownfield land in London using a variety of land use datasets including: OSM, the 2018 Brownfield Register and the 2009-2010 National Land Use Database (NLUD). As London's population increases, it's important that the city makes the most of space by building on brownfields. The grid maps can be exported from R and critically used as part of reports, articles or masterplans.
 
