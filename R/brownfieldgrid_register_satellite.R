@@ -37,9 +37,19 @@ brownfieldgrid_register_satellite = function(location) {
   leaflet() %>% addProviderTiles(providers$Esri.WorldImagery) %>%
     setView(lon, lat, zoom = 15) %>%
     addRectangles(lng1 = left, lat1 = bottom, lng2 = right, lat2 = top, color = "white", fillColor = "transparent") %>%
-    addPolygons(data = brownfield_register_shapefile, col = "#67a9cf", fillOpacity = 0.7) %>%
+    addPolygons(data = brownfield_register_shapefile, col = "#67a9cf", fillOpacity = 0.7, 
+                popup = paste0(
+                  "<b>Site Name: </b>"
+                  , brownfield_register_shapefile@data$SiteNameAddress
+                  , "<br><b>Hectares: </b>"
+                  , round(brownfield_register_shapefile@data$Hectares, 2))) %>%
     addCircleMarkers(data = brownfield_register_points, lat = brownfield_register_points@data$GeoY, lng = brownfield_register_points@data$GeoX, color = "#67a9cf", 
-                     stroke = F, fillOpacity = 0.9, radius = 5) %>%
+                     stroke = F, fillOpacity = 0.9, radius = 5,
+                     popup = paste0(
+                       "<b>Site Name: </b>"
+                       , brownfield_register_points@data$SiteNameAddress
+                       , "<br><b>Hectares: </b>"
+                       , round(brownfield_register_points@data$Hectares, 2))) %>%
     addLegend("bottomright", colors=c("#67a9cf", "white"), labels=c("Register", "Grid"), title="")
   
 }
