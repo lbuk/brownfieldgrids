@@ -28,7 +28,7 @@ Create a mile x mile OpenStreetMap (OSM) grid of brownfield land in Woolwich Doc
 brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
 
-Interactive mile x mile grid map the OSM brownfields in Woolwich Dockyard.
+Interactive mile x mile grid map the OSM brownfields at Woolwich Dockyard.
 ```
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
@@ -38,17 +38,16 @@ Grid map of OSM and [National Land Use Database (NLUD)](https://data.london.gov.
 brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
 
-Map of NLUD 2009-2010 and 2018 [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) data in Silvertown for comparison.
+Maps of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) 2018 data at Silvertown for comparison.
 ```
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
 
-Brownfieldgrids also contains functions for creating interactive grid maps of the Brownfield Register and NLUD.
-To create a map of the NLUD 2009-2010 at Woolwich Dockyard:
+Brownfieldgrids also contains functions for creating interactive grid maps of the Brownfield Register and NLUD. Click on the sites to show info. To create an interactive map of the NLUD 2009-2010 at Woolwich Dockyard, use:
 ```
 brownfieldgrids::brownfieldgrid_nlud_satellite("Woolwich Dockyard, London")
 ```
-Brownfield Register 2018 at Woolwich Dockyard
+To create an interactive map of the Brownfield Register 2018 at Woolwich Dockyard:
 ```
 brownfieldgrids::brownfieldgrid_register_satellite("Woolwich Dockyard, London") # Brownfield Register
 ```
