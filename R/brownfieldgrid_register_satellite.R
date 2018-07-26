@@ -42,7 +42,7 @@ brownfieldgrid_register_satellite = function(location) {
                 popup = paste0(
                   "<b>Site Name: </b>"
                   , brownfield_register_shapefile@data$SiteNameAddress
-                  "<br><b>Site Reference: </b>"
+                  , "<br><b>Site Reference: </b>"
                   , brownfield_register_shapefile@data$SiteReference
                   , "<br><b>Hectares: </b>"
                   , round(brownfield_register_shapefile@data$Hectares, 2))) %>%
@@ -51,6 +51,8 @@ brownfieldgrid_register_satellite = function(location) {
                      popup = paste0(
                        "<b>Site Name: </b>"
                        , brownfield_register_points@data$SiteNameAddress
+                       , "<br><b>Site Reference: </b>"
+                       , brownfield_register_shapefile@data$SiteReference
                        , "<br><b>Hectares: </b>"
                        , round(brownfield_register_points@data$Hectares, 2))) %>%
     addLegend("bottomright", colors=c("#67a9cf", "white"), labels=c("Register", "Grid"), title="")
