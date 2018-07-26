@@ -34,11 +34,18 @@ brownfieldgrid_nlud_satellite = function(location) {
   
   proj4string(london_brownfield_wgs_84) <- CRS(wgs84)
   
-  # Interactive Leaflet map of OSM brownfield land and bounding box
+  # Interactive Leaflet map of NLUD brownfield land and bounding box
   leaflet() %>% addProviderTiles(providers$Esri.WorldImagery) %>%
     setView(lon, lat, zoom = 15) %>%
     addRectangles(lng1 = left, lat1 = bottom, lng2 = right, lat2 = top, color = "white", fillColor = "transparent") %>%
-    addPolygons(data = london_brownfield_wgs_84, col = "#0056b2", fillOpacity = 0.7) %>% 
+    addPolygons(data = london_brownfield_wgs_84, col = "#0056b2", fillOpacity = 0.7, 
+                popup = paste0(
+                    "<b>Site Name (PAO): </b>"
+                    , brownfield_nlud_shp@data$PAO
+                    , "<br><b>Site Name (SAO): </b>"
+                    , brownfield_nlud_shp@data$SAO
+                    , "<br><b>Hectares: </b>"
+                    , round(brownfield_nlud_shp@data$AREA, 2))) %>% 
     addLegend("bottomright", colors=c("#0056b2", "white"), labels=c("NLUD", "Grid"), title="")
   
 }
