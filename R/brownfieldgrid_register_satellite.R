@@ -10,14 +10,11 @@
 
 brownfieldgrid_register_satellite = function(location) {
   
-  # Geocode the location
   location = geocode(location)
   
-  # Extract the latitude and longitude
   lon = location$lon
   lat = location$lat
   
-  # Bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
   bb_mat = as.matrix(bb)
