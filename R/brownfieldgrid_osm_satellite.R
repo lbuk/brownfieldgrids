@@ -1,9 +1,9 @@
-#' Interactive Grid Maps of Brownfield Land and Borough
+#' Interactive Grid Maps of OSM Brownfield Land
 #'
 #' Function for creating interactive grid maps of OSM brownfield land.
 #'
 #' @param Location A location in London
-#' @return Interactive grid map of brownfield land and borough outline.
+#' @return Interactive grid map of OSM brownfield land.
 #' @examples
 #' brownfieldgrid_osm_satellite("Limehouse, London")
 #' @export
