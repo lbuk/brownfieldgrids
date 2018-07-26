@@ -43,9 +43,13 @@ Map of NLUD 2009-2010 and 2018 [Brownfield Register](https://data.london.gov.uk/
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
 
-Brownfieldgrids also contains functions for creating interactive grid maps of the Brownfield Register and NLUD. Click on the sites to show info.
+Brownfieldgrids also contains functions for creating interactive grid maps of the Brownfield Register and NLUD.
+NLUD 2009-2010
 ```
-brownfieldgrids::brownfieldgrid_nlud_satellite("Woolwich Dockyard, London") # NLUD
+brownfieldgrids::brownfieldgrid_nlud_satellite("Woolwich Dockyard, London")
+```
+Brownfield Register 2018
+```
 brownfieldgrids::brownfieldgrid_register_satellite("Woolwich Dockyard, London") # Brownfield Register
 ```
 
