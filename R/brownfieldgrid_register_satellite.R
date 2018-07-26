@@ -28,8 +28,12 @@ brownfieldgrid_register_satellite = function(location) {
   
   wgs84 = '+proj=longlat +datum=WGS84'
   
+  data("brownfield_register_shapefile")
+  
   brownfield_register_shapefile = spTransform(brownfield_register_shapefile, CRS(wgs84))
   proj4string(brownfield_register_shapefile) <- CRS(wgs84)
+  
+  data("brownfield_register_points")
   
   brownfield_register_points = spTransform(brownfield_register_points, CRS(wgs84))
   proj4string(brownfield_register_points) <- CRS(wgs84)
