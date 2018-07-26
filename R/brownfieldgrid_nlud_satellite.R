@@ -38,7 +38,7 @@ brownfieldgrid_nlud_satellite = function(location) {
   leaflet() %>% addProviderTiles(providers$Esri.WorldImagery) %>%
     setView(lon, lat, zoom = 15) %>%
     addRectangles(lng1 = left, lat1 = bottom, lng2 = right, lat2 = top, color = "white", fillColor = "transparent") %>%
-    addPolygons(data = london_brownfield_wgs_84, col = "#0056b2", fillOpacity = 0.7, popup = ~brownfield_nlud_shp@data$PAO) %>% 
+    addPolygons(data = london_brownfield_wgs_84, col = "#0056b2", fillOpacity = 0.7) %>% 
     addLegend("bottomright", colors=c("#0056b2", "white"), labels=c("NLUD", "Grid"), title="")
   
 }
