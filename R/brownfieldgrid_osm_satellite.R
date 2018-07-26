@@ -38,11 +38,18 @@ brownfieldgrid_osm_satellite = function(location) {
   
   proj4string(brownfield_wgs_84) <- CRS(wgs84)
   
+  if(nrow(s_st$osm_polygons) == 0) {print("Note: There are no OSM brownfield sites in this grid.")} else{brownfield_wgs_84@data$area = areaPolygon(brownfield_wgs_84) / 10000}
+  
   # Interactive Leaflet map of OSM brownfield land and bounding box
   leaflet() %>% addProviderTiles(providers$Esri.WorldImagery) %>%
     setView(lon, lat, zoom = 15) %>%
-    addPolygons(data = brownfield_wgs_84, col = "#38f7ce", fillOpacity = 0.7) %>% 
     addRectangles(lng1 = left, lat1 = bottom, lng2 = right, lat2 = top, color = "white", fillColor = "transparent") %>%
+    addPolygons(data = brownfield_wgs_84, col = "#38f7ce", fillOpacity = 0.7,
+                popup = paste0(
+                  "<b>Site Name: </b>"
+                  , brownfield_wgs_84@data$name
+                  , "<br><b>Hectares: </b>"
+                  , round(brownfield_wgs_84@data$area, 2))) %>%
     addLegend("bottomright", colors=c("#38f7ce", "white"), labels=c("OSM", "Grid"), title="")
   
 }
