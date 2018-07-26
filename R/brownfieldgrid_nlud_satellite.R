@@ -10,14 +10,11 @@
 
 brownfieldgrid_nlud_satellite = function(location) {
   
-  # Geocode the location
   location = geocode(location)
   
-  # Extract the latitude and longitude
   lon = location$lon
   lat = location$lat
   
-  # Bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
   bb_mat = as.matrix(bb)
@@ -34,7 +31,6 @@ brownfieldgrid_nlud_satellite = function(location) {
   
   proj4string(london_brownfield_wgs_84) <- CRS(wgs84)
   
-  # Interactive Leaflet map of NLUD brownfield land and bounding box
   leaflet() %>% addProviderTiles(providers$Esri.WorldImagery) %>%
     setView(lon, lat, zoom = 15) %>%
     addRectangles(lng1 = left, lat1 = bottom, lng2 = right, lat2 = top, color = "white", fillColor = "transparent") %>%
