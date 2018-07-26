@@ -42,6 +42,8 @@ brownfieldgrid_register_satellite = function(location) {
                 popup = paste0(
                   "<b>Site Name: </b>"
                   , brownfield_register_shapefile@data$SiteNameAddress
+                  "<br><b>Site Reference: </b>"
+                  , brownfield_register_shapefile@data$SiteReference
                   , "<br><b>Hectares: </b>"
                   , round(brownfield_register_shapefile@data$Hectares, 2))) %>%
     addCircleMarkers(data = brownfield_register_points, lat = brownfield_register_points@data$GeoY, lng = brownfield_register_points@data$GeoX, color = "#67a9cf", 
