@@ -40,6 +40,8 @@ brownfieldgrid_nlud_satellite = function(location) {
                     , brownfield_nlud_shp@data$PAO
                     , "<br><b>Site Name (SAO): </b>"
                     , brownfield_nlud_shp@data$SAO
+                    , "<br><b>Site Reference: </b>"
+                    , brownfield_nlud_shp@data$SITE_REF
                     , "<br><b>Hectares: </b>"
                     , round(brownfield_nlud_shp@data$AREA, 2))) %>% 
     addLegend("bottomright", colors=c("#0056b2", "white"), labels=c("NLUD", "Grid"), title="")
