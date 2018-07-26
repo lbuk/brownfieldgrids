@@ -1,7 +1,7 @@
 # brownfieldgrids
 
 ## Overview
-An R package for creating grid maps of brownfield land in London.
+An R package for creating grid maps of brownfield land in London. It was created as part of a Master's dissertation at the Centre for Advanced Spatial Analysis (CASA), UCL.
 
 ## Installation
 ```
