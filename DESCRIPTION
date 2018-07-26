@@ -15,7 +15,6 @@ Depends:
     rgeos,
     ggmap,
     leaflet,
-    Rcpp,
     sp,
     dplyr,
     prettymapr,
