@@ -2,7 +2,7 @@ Package: brownfieldgrids
 Title: Create Grid Maps of OSM Brownfield Land in London
 Version: 0.0.0.9000
 Authors@R: person("Liam", "Bolton", email = "liam.bolton.17@ucl.ac.uk", role = c("aut", "cre"))
-Description: A set of functions for creating grid maps of brownfield land in London using R and data from OpenStreetMap. The tool enables users to create exploratory maps of brownfield land in London, and to compare land use data from OpenStreetMap and the National Land Use Database.
+Description: A set of functions for creating grid maps of brownfield land in London using R and data from OpenStreetMap, the Brownfield Register and the National Land Use Database. The tool enables users to create exploratory maps of brownfield land in London, and to compare land use data from OpenStreetMap and the National Land Use Database.
 Depends: 
     R (>= 3.4.0),
     devtools,
