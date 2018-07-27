@@ -39,7 +39,7 @@ Grid map of OSM and [National Land Use Database (NLUD)](https://data.london.gov.
 ```
 brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
-![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_nlud_woolwich_dockyard.png)
+![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_woolwich_dockyard.png)
 
 Maps of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) 2018 data at Silvertown for comparison.
 ```
