@@ -36,10 +36,8 @@ brownfieldgrid_nlud_satellite = function(location) {
     addRectangles(lng1 = left, lat1 = bottom, lng2 = right, lat2 = top, color = "white", fillColor = "transparent") %>%
     addPolygons(data = london_brownfield_wgs_84, col = "#0056b2", fillOpacity = 0.7, 
                 popup = paste0(
-                    "<b>Site Name (PAO): </b>"
+                    "<b>Site Name: </b>"
                     , brownfield_nlud_shp@data$PAO
-                    , "<br><b>Site Name (SAO): </b>"
-                    , brownfield_nlud_shp@data$SAO
                     , "<br><b>Site Reference: </b>"
                     , brownfield_nlud_shp@data$SITE_REF
                     , "<br><b>Hectares: </b>"
