@@ -38,6 +38,10 @@ brownfieldgrid_nlud_satellite = function(location) {
                 popup = paste0(
                     "<b>Site Name: </b>"
                     , brownfield_nlud_shp@data$PAO
+                    , "<br><b>Location: </b>"
+                    , brownfield_nlud_shp@data$STREET
+                    , ", "
+                    , brownfield_nlud_shp@data$LOCALITY
                     , "<br><b>Site Reference: </b>"
                     , brownfield_nlud_shp@data$SITE_REF
                     , "<br><b>Hectares: </b>"
