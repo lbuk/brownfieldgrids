@@ -27,30 +27,36 @@ Create a mile x mile OpenStreetMap (OSM) grid map of brownfield land in Woolwich
 ```
 brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
+![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_woolwich_dockyard.png)
 
 Interactive mile x mile grid map the OSM brownfields at Woolwich Dockyard.
 ```
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
+![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_woolwich_dockyard.png)
 
 Grid map of OSM and [National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review) 2009-2010 brownfield land at Woolwich Dockyard.
 ```
 brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
+![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_nlud_woolwich_dockyard.png)
 
 Maps of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) 2018 data at Silvertown for comparison.
 ```
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
+![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_silvertown.png)
 
 Brownfieldgrids also contains functions for creating interactive maps of the Brownfield Register and NLUD. To create an interactive map of the NLUD 2009-2010 at Woolwich Dockyard, use:
 ```
 brownfieldgrids::brownfieldgrid_nlud_satellite("Woolwich Dockyard, London")
 ```
+![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_nlud_satellite_woolwich_dockyard.png)
 To create an interactive map of the Brownfield Register 2018 at Woolwich Dockyard:
 ```
 brownfieldgrids::brownfieldgrid_register_satellite("Woolwich Dockyard, London")
 ```
+![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_satellite_woolwich_dockyard.png)
 
 Users can download the London Brownfield Register dataset (exc. London Borough of Havering). To find out more about the data, read the [Brownfield Land Registers Data Standard](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/653657/BrownfieldLandRegisters_-_DataStandard.pdf). 
 ```
