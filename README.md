@@ -52,6 +52,7 @@ Brownfieldgrids also contains functions for creating interactive maps of the Bro
 brownfieldgrids::brownfieldgrid_nlud_satellite("Woolwich Dockyard, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_nlud_satellite_woolwich_dockyard.png)
+
 To create an interactive map of the Brownfield Register 2018 at Woolwich Dockyard:
 ```
 brownfieldgrids::brownfieldgrid_register_satellite("Woolwich Dockyard, London")
