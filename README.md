@@ -45,7 +45,7 @@ Maps of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/data
 ```
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
-![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_silvertown.png)
+![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_reg_nlud_silvertown.png)
 
 Brownfieldgrids also contains functions for creating interactive maps of the Brownfield Register and NLUD. To create an interactive map of the NLUD 2009-2010 at Woolwich Dockyard, use:
 ```
