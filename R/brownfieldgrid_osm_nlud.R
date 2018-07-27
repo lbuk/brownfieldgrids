@@ -60,7 +60,7 @@ brownfieldgrid_osm_nlud = function(location) {
   
   # Scale bar and title
   addscalebar(widthhint = 0.1,
-              unitcategory = "metric", htin = 0.1, padin = c(0.70, 0.1),
+              unitcategory = "metric", htin = 0.1, padin = c(0.69, 0.1),
               style = "ticks", lwd = 0.9, plotepsg = 4326,
               linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.6,
               label.col = "black", pos = "bottomright")
@@ -78,6 +78,6 @@ brownfieldgrid_osm_nlud = function(location) {
   # Plot the legend
   palette = c("#38f7ce", "#0056b2", "black")
   land = c("OSM", "NLUD", "Streets")
-  add_legend(-0.49, 1.1, legend=land, pch=19, col=palette, bty='n', horiz = T, cex=0.9, title = "")
+  add_legend(-0.35, 1.1, legend=land, pch=19, col=palette, bty='n', horiz = T, cex=0.9, title = "")
   
 }
