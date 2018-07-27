@@ -46,7 +46,7 @@ brownfieldgrid_osm_satellite = function(location) {
     addRectangles(lng1 = left, lat1 = bottom, lng2 = right, lat2 = top, color = "white", fillColor = "transparent") %>%
     addPolygons(data = brownfield_wgs_84, col = "#38f7ce", fillOpacity = 0.7,
                 popup = paste0(
-                  "<b>Site Name: </b>"
+                  "<b>OSM Site Name: </b>"
                   , brownfield_wgs_84@data$name
                   , "<br><b>Hectares: </b>"
                   , round(brownfield_wgs_84@data$area, 2))) %>%
