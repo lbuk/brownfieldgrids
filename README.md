@@ -68,7 +68,7 @@ OpenStreetMap (OSM) is a platform for crowdsourced mapping and citizen-led geosp
 Land use data – including OpenStreetMap, the NLUD and the Brownfield Register – can vary in quality and coverage. As of June 2018 not all of London's local authorities have uploaded their Brownfield Register data to the London Datastore and the London Boroughs of Havering has not published its data online. brownfieldgrids will update the Brownfield Register data from the London Datastore regularly. 
 
 ## Next Steps
-An exploratory tool that utilises OpenStreetMap data in conjunction with data from Brownfield Register and the NLUD could be useful to planners, local authorities and developers. It was created as part of a Master's dissertation at the Centre for Advanced Spatial Analysis (CASA), UCL. The package will be disseminated to organisations and citizens in London. 
+An exploratory tool that utilises OpenStreetMap data in conjunction with data from Brownfield Register and the NLUD could be useful to planners, local authorities and developers. It was created as part of a Master's dissertation at the Centre for Advanced Spatial Analysis (CASA), UCL. The package and research will be disseminated in London. 
 
 ## License
 Copyright 2018 Liam Bolton
