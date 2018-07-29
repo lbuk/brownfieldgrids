@@ -29,7 +29,7 @@ brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
 ![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_woolwich_dockyard.png)
 
-Interactive mile x mile grid map the OSM brownfields at Woolwich Dockyard.
+Semi-interactive mile x mile grid map the OSM brownfields at Woolwich Dockyard in R. The image below was exported from RStudio.
 ```
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
@@ -41,7 +41,7 @@ brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_woolwich_dockyard.png)
 
-Map of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) 2018 data for comparison.
+Map of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) 2018 data.
 ```
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
