@@ -29,7 +29,7 @@ brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
 ![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_woolwich_dockyard.png)
 
-Semi-interactive mile x mile grid map the OSM brownfields at Woolwich Dockyard. The image below was exported from RStudio using Viewer > Export > Save as Image. It can be viewed in RStudio or in your browser.
+Semi-interactive mile x mile grid map the OSM brownfields at Woolwich Dockyard. It can be viewed in RStudio or in your browser. The image below was exported from RStudio. 
 ```
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
