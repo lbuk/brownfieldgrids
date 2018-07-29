@@ -33,7 +33,7 @@ Interactive mile x mile grid map the OSM brownfields at Woolwich Dockyard.
 ```
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
-![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_woolwich_dockyard.png)
+![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_b_woolwich_dockyard.jpeg)
 
 Grid map of OSM and [National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review) 2009-2010 brownfield land at Woolwich Dockyard.
 ```
