@@ -41,11 +41,11 @@ brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_woolwich_dockyard.png)
 
-Maps of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) 2018 data at Silvertown for comparison.
+Map of NLUD 2009-2010 and [Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register) 2018 data for comparison.
 ```
 brownfieldgrids::brownfieldgrid_register_nlud("Silvertown, London")
 ```
-![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_reg_nlud_silvertown.png)
+![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
 
 Brownfieldgrids also contains functions to produce mini interactive maps of the Brownfield Register and the NLUD in London. 
 ```
