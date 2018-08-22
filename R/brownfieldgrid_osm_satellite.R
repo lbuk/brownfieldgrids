@@ -38,7 +38,7 @@ brownfieldgrid_osm_satellite = function(location) {
   
   proj4string(brownfield_wgs_84) <- CRS(wgs84)
   
-  if(nrow(s_st$osm_polygons) == 0) {print("Note: There are no OSM brownfield sites in this grid.")} else{brownfield_wgs_84@data$area = areaPolygon(brownfield_wgs_84) / 10000}
+  if(nrow(s_st$osm_polygons) == 0) {s_st$osm_polygons) == 0} else{brownfield_wgs_84@data$area = areaPolygon(brownfield_wgs_84) / 10000}
   
   # Interactive Leaflet map of OSM brownfield land and bounding box
   leaflet() %>% addProviderTiles(providers$Esri.WorldImagery) %>%
