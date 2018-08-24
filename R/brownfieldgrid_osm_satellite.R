@@ -21,6 +21,7 @@ brownfieldgrid_osm_satellite = function(location) {
   # Bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
+  # Bounding box matrix for grid plotting
   bb_mat = as.matrix(bb)
   left = bb_mat[1,1]
   bottom = bb_mat[2,1]
@@ -44,7 +45,7 @@ brownfieldgrid_osm_satellite = function(location) {
   # Calculate area (hectares) of OpenStreetMap polygons
   if(nrow(s_st$osm_polygons) == 0) {nrow(s_st$osm_polygons) == 0} else{brownfield_wgs_84@data$area = areaPolygon(brownfield_wgs_84) / 10000}
   
-  # Interactive Leaflet map of OSM brownfield land and bounding box
+  # Interactive Leaflet map of OpenStreetMap brownfields and bounding box
   leaflet() %>% addProviderTiles(providers$Esri.WorldImagery) %>%
     setView(lon, lat, zoom = 15) %>%
     addRectangles(lng1 = left, lat1 = bottom, lng2 = right, lat2 = top, color = "white", fillColor = "transparent") %>%
