@@ -21,7 +21,7 @@ brownfieldgrid_osm_nlud = function(location) {
   # Set the bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
-  # Matrix for plotting bounding box
+  # Bounding box matrix for grid plotting
   bb_mat = as.matrix(bb)
   left = bb_mat[1,1]
   bottom = bb_mat[2,1]
@@ -44,7 +44,7 @@ brownfieldgrid_osm_nlud = function(location) {
   highway_wgs_84 = spTransform(s_b$osm_lines, CRS(wgs84))
   if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{brownfield_wgs_84 = spTransform(s_st$osm_polygons, CRS(wgs84))}
   
-  # Download the NLUD 2009-2010 brownfield shapefile
+  # Download the NLUD 2009-2010 brownfield shapefile from brownfieldgrids
   data(brownfield_nlud_shp)
   
   # Transform
