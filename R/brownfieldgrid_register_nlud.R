@@ -18,6 +18,7 @@ brownfieldgrid_register_nlud = function(location) {
   
   bb = center_bbox(lon, lat, 1609, 1609)
   
+  # Bounding box matrix for grid plotting
   bb_mat = as.matrix(bb)
   left = bb_mat[1,1]
   bottom = bb_mat[2,1]
