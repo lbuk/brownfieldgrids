@@ -27,13 +27,17 @@ brownfieldgrid_osm_borough = function(location) {
   right = bb_mat[3,1]
   top = bb_mat[4,1]
   
+  # Set bounding box
   bb <- opq(bbox = bb)
   
+  # Query Overpass API for OpenStreetMap data
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
   s_st <- osmdata_sp(st)
   
+  # Set CRS
   wgs84 = '+proj=longlat +datum=WGS84'
   
+  # Download data from brownfieldgrids package
   data(london_boro_shp)
   
   data = data.frame(lon, lat)
@@ -70,6 +74,8 @@ brownfieldgrid_osm_borough = function(location) {
               style = "ticks", lwd = 0.9, plotepsg = 4326,
               linecol = "black", tick.cex = 0.7, labelpadin = 0.07, label.cex = 0.6,
               label.col = "black", pos = "bottomright")
+  
+  # Titles and subtitles
   title(main = "", xlab="Data: OSM", cex = 0.6)
   
   # Function for plotting legend
@@ -87,7 +93,7 @@ brownfieldgrid_osm_borough = function(location) {
   
   add_legend(-0.91, 0.99, legend=land, pch=19, col=palette, bty='n', horiz = T, cex=0.9, title = "")
   
-  # Print the borough the bounding box is centred on in the terminal
+  # Print the borough the local authority the box is centred on in the terminal
   boro = as.character(df_borough[1]$NAME)
   
   cat("Brownfield grid centred on the London local authority of... ", boro)
