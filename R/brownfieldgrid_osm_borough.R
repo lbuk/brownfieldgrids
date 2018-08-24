@@ -21,6 +21,7 @@ brownfieldgrid_osm_borough = function(location) {
   # Bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
+  # Bounding box matrix for grid plotting
   bb_mat = as.matrix(bb)
   left = bb_mat[1,1]
   bottom = bb_mat[2,1]
@@ -46,13 +47,13 @@ brownfieldgrid_osm_borough = function(location) {
   
   if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{brownfield_wgs_84 = spTransform(s_st$osm_polygons, CRS(wgs84))}
   
-  # Spatial points dataframe for the centre of bounding box
+  # Spatialpoints dataframe for the centre of bounding box
   SP = SpatialPointsDataFrame(coords = data, data = data, proj4string = CRS(wgs84))
   
   # Bounding box point in London borough polygon
   df_borough = over(SP, london_boro_shp[,"NAME"])
   
-  # Borough for plotting
+  # Extract local authority the grid is centred on
   borough = copy(london_boro_shp[london_boro_shp@data$NAME==df_borough[1]$NAME,])
   
   # Transform
