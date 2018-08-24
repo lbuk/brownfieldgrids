@@ -27,17 +27,21 @@ brownfieldgrid_osm_satellite = function(location) {
   right = bb_mat[3,1]
   top = bb_mat[4,1]
   
+  # Set bounding box
   bb <- opq(bbox = bb)
   
+  # Query Overpass API for OpenStreetMap data
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
   s_st <- osmdata_sp(st)
   
+  # Set CRS
   wgs84 = '+proj=longlat +datum=WGS84'
   
   if(nrow(s_st$osm_polygons) == 0) {print("Note: There are no OSM brownfield sites in this grid.")} else{brownfield_wgs_84 = spTransform(s_st$osm_polygons, CRS(wgs84))}
   
   proj4string(brownfield_wgs_84) <- CRS(wgs84)
   
+  # Calculate area (hectares) of OpenStreetMap polygons
   if(nrow(s_st$osm_polygons) == 0) {nrow(s_st$osm_polygons) == 0} else{brownfield_wgs_84@data$area = areaPolygon(brownfield_wgs_84) / 10000}
   
   # Interactive Leaflet map of OSM brownfield land and bounding box
