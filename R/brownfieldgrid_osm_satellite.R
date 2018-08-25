@@ -29,11 +29,11 @@ brownfieldgrid_osm_satellite = function(location) {
   top = bb_mat[4,1]
   
   # Set bounding box
-  bb <- opq(bbox = bb)
+  bb = opq(bbox = bb)
   
   # Query Overpass API for OpenStreetMap data
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
-  s_st <- osmdata_sp(st)
+  s_st = osmdata_sp(st)
   
   # Set CRS
   wgs84 = '+proj=longlat +datum=WGS84'
