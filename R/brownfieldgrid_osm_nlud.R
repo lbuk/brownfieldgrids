@@ -29,14 +29,14 @@ brownfieldgrid_osm_nlud = function(location) {
   top = bb_mat[4,1]
   
   # Set bounding box
-  bb <- opq(bbox = bb)
+  bb = opq(bbox = bb)
   
   # Query Overpass API for OpenStreetMap data
   b = bb  %>% add_osm_feature(key = 'highway')
   s_b = osmdata_sp(b)
   
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
-  s_st <- osmdata_sp(st)
+  s_st = osmdata_sp(st)
   
   # Set CRS
   wgs84 = '+proj=longlat +datum=WGS84'
@@ -73,7 +73,7 @@ brownfieldgrid_osm_nlud = function(location) {
   title(main = "", xlab="Data: OSM, NLUD 2009-10", cex = 0.6)
   
   # Function foor plotting legend
-  add_legend <- function(...) {
+  add_legend = function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
                 mar=c(0, 0, 0, 0), new=TRUE)
     on.exit(par(opar))
