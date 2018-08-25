@@ -26,14 +26,14 @@ brownfieldgrid_register_nlud = function(location) {
   top = bb_mat[4,1]
   
   # Set bounding box
-  bb <- opq(bbox = bb)
+  bb = opq(bbox = bb)
   
   # Query Overpass API for OpenStreetMap data
   b = bb  %>% add_osm_feature(key = 'highway')
-  s_b <- osmdata_sp(b)
+  s_b = osmdata_sp(b)
   
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
-  s_st <- osmdata_sp(st)
+  s_st = osmdata_sp(st)
   
   # Set CRS
   wgs84 = '+proj=longlat +datum=WGS84'
@@ -56,7 +56,7 @@ brownfieldgrid_register_nlud = function(location) {
   proj4string(brownfield_register_points) <- CRS(wgs84)
   proj4string(highway_wgs_84) <- CRS(wgs84)
   
-  # Set plot window for comparative visualisation
+  # Set plot layout for comparative visualisation
   par(mfrow=c(1,2))
   
   # Plot NLUD data
@@ -84,7 +84,7 @@ brownfieldgrid_register_nlud = function(location) {
   title(main = "", xlab="Data: Brownfield Register 2018", cex = 0.6)
   
   # NLUD legend function
-  add_legend_1 <- function(...) {
+  add_legend_1 = function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
                 mar=c(0, 0, 0, 0), new=TRUE)
     on.exit(par(opar))
@@ -93,7 +93,7 @@ brownfieldgrid_register_nlud = function(location) {
   }
   
   # Brownfield Register legend function
-  add_legend_2 <- function(...) {
+  add_legend_2 = function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
                 mar=c(0, 0, 0, 0), new=TRUE)
     on.exit(par(opar))
