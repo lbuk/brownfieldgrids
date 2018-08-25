@@ -47,12 +47,6 @@ brownfieldgrids::brownfieldgrid_register_nlud("Woolwich Dockyard, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
 
-Brownfieldgrids also contains functions to produce mini interactive maps of the 2018 Brownfield Register and the 2009-2010 NLUD in London. 
-```
-brownfieldgrids::brownfieldgrid_nlud_satellite("Woolwich Dockyard, London") # NLUD
-brownfieldgrids::brownfieldgrid_register_satellite("Woolwich Dockyard, London") # Brownfield Register
-```
-
 Users can download the London Brownfield Register dataset (exc. London Borough of Havering). To find out more about the data, read the [Brownfield Land Registers Data Standard](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/653657/BrownfieldLandRegisters_-_DataStandard.pdf). 
 ```
 data("london_brownfield_register")
