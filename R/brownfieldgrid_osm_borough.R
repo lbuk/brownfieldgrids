@@ -60,7 +60,7 @@ brownfieldgrid_osm_borough = function(location) {
   borough = spTransform(borough, CRS(wgs84))
   
   proj4string(borough) = CRS(wgs84)
-  if(nrow(s_st$osm_polygons) == 0) {cat("Note: There are no OSM brownfield sites in this grid.")} else{proj4string(brownfield_wgs_84) <- CRS(wgs84)}
+  if(nrow(s_st$osm_polygons) == 0) {print("Note: There are no OSM brownfield sites in this grid.")} else{proj4string(brownfield_wgs_84) <- CRS(wgs84)}
   
   par(mfrow=c(1,1))
   
@@ -97,6 +97,6 @@ brownfieldgrid_osm_borough = function(location) {
   # Print the local authority the box is centred on in the terminal
   boro = as.character(df_borough[1]$NAME)
   
-  cat("Brownfield grid centred on the London local authority of... ", boro)
+  print("Brownfield grid centred on the London local authority of... ", boro)
   
 }
