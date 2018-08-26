@@ -60,7 +60,7 @@ brownfieldgrid_osm_borough = function(location) {
   borough = spTransform(borough, CRS(wgs84))
   
   proj4string(borough) = CRS(wgs84)
-  if(nrow(s_st$osm_polygons) == 0) {brownfield_osm = 0} else{proj4string(brownfield_wgs_84) <- CRS(wgs84)}
+  if(nrow(s_st$osm_polygons) == 0) {print("Note: There are no OSM brownfield sites in this grid.")} else{proj4string(brownfield_wgs_84) <- CRS(wgs84)}
   
   par(mfrow=c(1,1))
   
