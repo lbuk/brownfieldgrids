@@ -28,10 +28,10 @@ brownfieldgrid_osm_nlud = function(location) {
   right = bb_mat[3,1]
   top = bb_mat[4,1]
   
-  # Set bounding box
+  # Query data from bounding box
   bb = opq(bbox = bb)
   
-  # Query Overpass API for OpenStreetMap data
+  # Query Overpass API for OpenStreetMap data in bounding box
   b = bb  %>% add_osm_feature(key = 'highway')
   s_b = osmdata_sp(b)
   
