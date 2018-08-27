@@ -16,6 +16,7 @@ brownfieldgrid_register_nlud = function(location) {
   lon = location$lon
   lat = location$lat
   
+  # Mile by mile bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
   # Bounding box matrix for grid plotting
@@ -25,7 +26,7 @@ brownfieldgrid_register_nlud = function(location) {
   right = bb_mat[3,1]
   top = bb_mat[4,1]
   
-  # Set bounding box
+  # Query data from bounding box
   bb = opq(bbox = bb)
   
   # Query Overpass API for OpenStreetMap data
