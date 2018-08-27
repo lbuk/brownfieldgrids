@@ -15,6 +15,7 @@ brownfieldgrid_nlud_satellite = function(location) {
   lon = location$lon
   lat = location$lat
   
+  # Mile by mile bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
   bb_mat = as.matrix(bb)
