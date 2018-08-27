@@ -18,7 +18,7 @@ brownfieldgrid_osm_borough = function(location) {
   lon = location$lon
   lat = location$lat
   
-  # Bounding box
+  # Mile by mile bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
   
   # Bounding box matrix for grid plotting
@@ -28,10 +28,10 @@ brownfieldgrid_osm_borough = function(location) {
   right = bb_mat[3,1]
   top = bb_mat[4,1]
   
-  # Set bounding box
+  # Query data from bounding box
   bb = opq(bbox = bb)
   
-  # Query Overpass API for OpenStreetMap data
+  # Query Overpass API for OpenStreetMap data in bounding box
   st  = bb %>% add_osm_feature(key = 'landuse', value = 'brownfield')
   s_st = osmdata_sp(st)
   
@@ -60,6 +60,8 @@ brownfieldgrid_osm_borough = function(location) {
   borough = spTransform(borough, CRS(wgs84))
   
   proj4string(borough) = CRS(wgs84)
+  
+  # Print in console if there are no OpenStreetMap brownfields in bounding box
   if(nrow(s_st$osm_polygons) == 0) {cat("Note: There are no OSM brownfield sites in this grid. ")} else{proj4string(brownfield_wgs_84) <- CRS(wgs84)}
   
   par(mfrow=c(1,1))
