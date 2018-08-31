@@ -47,19 +47,14 @@ brownfieldgrids::brownfieldgrid_register_nlud("Woolwich Dockyard, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
 
-Users can download an 2018 Brownfield Register dataset that covers 32 of London's 33 local authorities and several development corporations. To find out more, read the [Brownfield Land Registers Data Standard](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/653657/BrownfieldLandRegisters_-_DataStandard.pdf). 
-```
-data("london_brownfield_register")
-```
-
 ## Applications
 The brownfieldgrids package can be used to create maps of brownfield land in London using a variety of data sources. The maps can be exported from R and critically used as part of reports, articles and masterplans. 
 
 ## Data
-This package makes use of [OpenStreetMap](https://www.openstreetmap.org/#map=19/51.48246/-0.06890&layers=NDG) brownfield data, which OpenStreetMap describes as: “land scheduled for new development which was previously used for industrial purposes or some commercial uses”. The package makes extensive use of open data from the Brownfield Register and the NLUD.
+This package makes use of [OpenStreetMap](https://www.openstreetmap.org/#map=19/51.48246/-0.06890&layers=NDG) brownfields, which OpenStreetMap defines as: “land scheduled for new development which was previously used for industrial purposes or some commercial uses”. The package makes extensive use of open data from the Brownfield Register and the NLUD.
 
 ## Limitations
-Land use data, in particular OpenStreetMap data, can vary in quality. As of August 2018 not all of London's local authorities have uploaded their Brownfield Register data to the Datastore and Havering has not published its data.
+Land use data, in particular OpenStreetMap data, can vary in quality. As of August 2018 not all of London's local authorities have uploaded their Brownfield Register data to the London Datastore and Havering has not published its data.
 
 ## Next Steps
 Brownfieldgrids could be useful to planners, developers and citizens. It was created as part of a Master's dissertation at the Centre for Advanced Spatial Analysis (CASA), UCL.
