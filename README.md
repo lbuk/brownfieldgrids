@@ -19,8 +19,10 @@ library(osmdata)
 # Install brownfieldgrids
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
+
+# If you have any problems then email liam.bolton.17@ucl.ac.uk or post on the Issues page.
 ```
-If you have any problems then email liam.bolton.17@ucl.ac.uk or post on the Issues page.
+
 
 ## Usage
 Create a minimalistic mile x mile map of OpenStreetMap (OSM) [brownfield land](https://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield) at Woolwich Dockyard.
@@ -48,7 +50,7 @@ brownfieldgrids::brownfieldgrid_register_nlud("Woolwich Dockyard, London")
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
 
 ## Limitations
-Land use data, in particular OpenStreetMap, can vary in quality and coverage. As of August 2018 Havering has not published its Brownfield Register data online.
+Land use data, in particular OpenStreetMap, can vary in quality. As of August 2018 Havering has not published its Brownfield Register data online.
 
 ## Next Steps
 Brownfieldgrids could be useful to planners, developers and citizens. It was created as part of a Master's dissertation at CASA, UCL.
