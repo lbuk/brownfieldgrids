@@ -20,10 +20,10 @@ library(osmdata)
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 ```
-If you have any problems (e.g. installation) then email me at liam.bolton.17@ucl.ac.uk or post on the Issues page.
+If you have any problems then email me at liam.bolton.17@ucl.ac.uk or post on the Issues page.
 
 ## Usage
-Create a minimalistic mile x mile OpenStreetMap (OSM) grid map of brownfield land at Woolwich Dockyard and the borough outline.
+Create a minimalistic mile x mile OpenStreetMap (OSM) grid map of [brownfield land](https://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield) at Woolwich Dockyard and the borough outline.
 ```
 brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
@@ -47,14 +47,11 @@ brownfieldgrids::brownfieldgrid_register_nlud("Woolwich Dockyard, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
 
-## Data
-This package makes use of [OpenStreetMap](https://www.openstreetmap.org/#map=19/51.48246/-0.06890&layers=NDG) brownfields, which OpenStreetMap defines as: “land scheduled for new development which was previously used for industrial purposes or some commercial uses”. The package makes extensive use of open data from the Brownfield Register and the NLUD.
-
 ## Limitations
-Land use data, in particular OpenStreetMap data, can vary in quality. As of August 2018 not all of London's local authorities have uploaded their Brownfield Register data to the London Datastore and Havering has not published its data.
+Land use data, in particular OpenStreetMap data, can vary in quality. As of August 2018 Havering has not published its data online.
 
 ## Next Steps
-Brownfieldgrids could be useful to planners, developers and citizens. The maps can be exported from R and critically used as part of reports, articles and masterplans. It was created as part of a Master's dissertation at the Centre for Advanced Spatial Analysis (CASA), UCL.
+Brownfieldgrids could be useful to planners, developers and citizens. The maps can be exported from R and critically used as part of reports and articles, for instance. It was created as part of a Master's dissertation at CASA, UCL.
 
 ## License
 Copyright 2018 Liam Bolton
