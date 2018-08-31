@@ -25,26 +25,26 @@ library(brownfieldgrids)
 
 
 ## Usage
-Create a minimalistic mile x mile map of OpenStreetMap (OSM) [brownfield land](https://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield) at Woolwich Dockyard.
 ```
+# Create a minimalistic mile x mile map of OpenStreetMap (OSM) brownfields at Woolwich Dockyard
 brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
 ![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_woolwich_dockyard.png)
 
-Interactive grid map of OpenStreetMap brownfields.
 ```
+# Interactive grid map of OpenStreetMap brownfields
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
 ![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_b_woolwich_dockyard.jpeg)
 
-Map of OSM and [National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review) brownfields.
 ```
+# Map of OSM and National Land Use Database (NLUD)
 brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_woolwich_dockyard.png)
 
-Comparative map of the 2009-2010 NLUD and the [2018 Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register).
 ```
+# Comparative map of the 2009-2010 NLUD and the 2018 Brownfield Register
 brownfieldgrids::brownfieldgrid_register_nlud("Woolwich Dockyard, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
