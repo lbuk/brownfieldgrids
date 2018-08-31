@@ -20,10 +20,10 @@ library(osmdata)
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 ```
-If you have any problems then email me at liam.bolton.17@ucl.ac.uk or post on the Issues page.
+If you have any problems then email liam.bolton.17@ucl.ac.uk or post on the Issues page.
 
 ## Usage
-Create a minimalistic mile x mile OpenStreetMap (OSM) grid map of [brownfield land](https://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield) at Woolwich Dockyard and the borough outline.
+Create a minimalistic mile x mile map of OpenStreetMap (OSM) [brownfield land](https://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield) at Woolwich Dockyard and the borough.
 ```
 brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
@@ -35,23 +35,23 @@ brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
 ![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_b_woolwich_dockyard.jpeg)
 
-Map of OSM and [2009-2010 National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review) brownfields.
+Map of OSM and [National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review) brownfields.
 ```
 brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_woolwich_dockyard.png)
 
-Comparative map of the 2009-2010 NLUD and [2018 Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register).
+Comparative map of the 2009-2010 NLUD and the [2018 Brownfield Register](https://data.london.gov.uk/dataset/brownfield-land-register).
 ```
 brownfieldgrids::brownfieldgrid_register_nlud("Woolwich Dockyard, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
 
 ## Limitations
-Land use data, in particular OpenStreetMap data, can vary in quality. As of August 2018 Havering has not published its data online.
+Land use data, in particular OpenStreetMap data, can vary in quality and coverage. As of August 2018 Havering has not published its Brownfield Register data online.
 
 ## Next Steps
-Brownfieldgrids could be useful to planners, developers and citizens. The maps can be exported from R and critically used as part of reports and articles, for instance. It was created as part of a Master's dissertation at CASA, UCL.
+Brownfieldgrids could be useful to planners, developers and citizens. It was created as part of a Master's dissertation at CASA, UCL.
 
 ## License
 Copyright 2018 Liam Bolton
