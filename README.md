@@ -25,19 +25,19 @@ library(brownfieldgrids)
 
 ## Usage
 ```
-# Minimalistic mile x mile map of OpenStreetMap (OSM) brownfields at Woolwich Dockyard
+# Minimalistic grid map of OpenStreetMap (OSM) brownfields at Woolwich Dockyard and the local authority outline
 brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ```
 ![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_woolwich_dockyard.png)
 
 ```
-# Interactive grid map of OpenStreetMap brownfields
+# Interactive grid map of OSM brownfields
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
 ![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_b_woolwich_dockyard.jpeg)
 
 ```
-# Map of OSM and NLUD
+# Map of OSM and NLUD brownfields
 brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_woolwich_dockyard.png)
