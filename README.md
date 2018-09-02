@@ -12,7 +12,7 @@ library(devtools)
 # Update packages
 update.packages(ask=F)
 
-# Install the dev version of osmdata
+# Install osmdata
 install_github("ropensci/osmdata")
 library(osmdata)
 
@@ -20,7 +20,7 @@ library(osmdata)
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 
-# If you have any problems then email liam.bolton.17@ucl.ac.uk or post on the Issues page.
+# If you request more info or have any problems then email liam.bolton.17@ucl.ac.uk
 ```
 
 ## Usage
@@ -37,7 +37,7 @@ brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_b_woolwich_dockyard.jpeg)
 
 ```
-# Map of OSM and National Land Use Database (NLUD)
+# Map of OSM and NLUD
 brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ```
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_woolwich_dockyard.png)
