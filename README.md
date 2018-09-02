@@ -1,7 +1,7 @@
 # brownfieldgrids
 
 ## Overview
-An R package for creating maps of brownfield land in London using the [2018 Brownfield Register](https://www.gov.uk/guidance/brownfield-land-registers), [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield) and the [2009-2010 NLUD](https://data.london.gov.uk/dataset/london-brownfield-sites-review). It is an MSc dissertation project at CASA, UCL.
+An R package for creating maps of brownfield land in London using the [2018 Brownfield Register](https://www.gov.uk/guidance/brownfield-land-registers), [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield) and the [2009-2010 NLUD](https://data.london.gov.uk/dataset/london-brownfield-sites-review).
 
 ## Installation
 ```
@@ -20,7 +20,7 @@ library(osmdata)
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 
-# If you request more info or have any problems then email liam.bolton.17@ucl.ac.uk
+# brownfieldgrids is an MSc dissertation project at CASA, UCL. If you request more info or have any problems then email liam.bolton.17@ucl.ac.uk
 ```
 
 ## Usage
