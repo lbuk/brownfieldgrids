@@ -20,7 +20,8 @@ library(osmdata)
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 
-# brownfieldgrids is an MSc dissertation project at CASA, UCL. If you request more info or have any problems then email liam.bolton.17@ucl.ac.uk
+# brownfieldgrids is an MSc dissertation project at CASA, UCL. 
+# If you request more info or have any problems then email liam.bolton.17@ucl.ac.uk
 ```
 
 ## Usage
