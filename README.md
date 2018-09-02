@@ -31,7 +31,7 @@ brownfieldgrids::brownfieldgrid_osm_borough("Woolwich Dockyard, London")
 ![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_woolwich_dockyard.png)
 
 ```
-# Interactive grid map of OSM brownfields
+# Interactive map of OSM brownfields
 brownfieldgrids::brownfieldgrid_osm_satellite("Woolwich Dockyard, London")
 ```
 ![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_b_woolwich_dockyard.jpeg)
@@ -43,10 +43,10 @@ brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_woolwich_dockyard.png)
 
 ```
-# Map of the 2009-2010 NLUD and the 2018 Brownfield Register
+# Map of 2009-2010 NLUD and 2018 Brownfield Register
 brownfieldgrids::brownfieldgrid_register_nlud("Woolwich Dockyard, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
 
 ## Next Steps
-Brownfieldgrids could be useful to planners, developers and citizens. It was created as part of a Master's dissertation at CASA, UCL.
+Brownfieldgrids could be useful to planners, developers and citizens. It is an MSc dissertation project at CASA, UCL.
