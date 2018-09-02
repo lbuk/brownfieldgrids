@@ -1,7 +1,7 @@
 # brownfieldgrids
 
 ## Overview
-An R package for creating maps of brownfield land in London using the [2018 Brownfield Register](https://www.gov.uk/guidance/brownfield-land-registers), [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield) and the [2009-2010 NLUD](https://data.london.gov.uk/dataset/london-brownfield-sites-review).
+An R package for creating maps of brownfield land in London using the [2018 Brownfield Register](https://www.gov.uk/guidance/brownfield-land-registers), [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield) and the [2009-2010 NLUD](https://data.london.gov.uk/dataset/london-brownfield-sites-review). Brownfieldgrids could be useful to planners, developers and citizens. It is an MSc dissertation project at CASA, UCL.
 
 ## Installation
 ```
@@ -47,6 +47,3 @@ brownfieldgrids::brownfieldgrid_osm_nlud("Woolwich Dockyard, London")
 brownfieldgrids::brownfieldgrid_register_nlud("Woolwich Dockyard, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
-
-## Next Steps
-Brownfieldgrids could be useful to planners, developers and citizens. It is an MSc dissertation project at CASA, UCL.
