@@ -72,7 +72,7 @@ brownfieldgrid_osm_nlud = function(location) {
   # Titles and subtitles
   title(main = "", xlab="Data: OSM, NLUD 2009-10", cex = 0.6)
   
-  # Function foor plotting legend
+  # Function for plotting legend
   add_legend = function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
                 mar=c(0, 0, 0, 0), new=TRUE)
