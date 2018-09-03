@@ -73,6 +73,7 @@ brownfieldgrid_osm_nlud = function(location) {
   title(main = "", xlab="Data: OSM, NLUD 2009-10", cex = 0.6)
   
   # Function for plotting legend
+  # The function courtesy of stackoverflow: https://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics/3932558
   add_legend = function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
                 mar=c(0, 0, 0, 0), new=TRUE)
