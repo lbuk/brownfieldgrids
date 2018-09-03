@@ -85,6 +85,7 @@ brownfieldgrid_register_nlud = function(location) {
   title(main = "", xlab="Data: Brownfield Register 2018", cex = 0.6)
   
   # NLUD legend function
+  # The function courtesy of stackoverflow: https://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics/3932558
   add_legend_1 = function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
                 mar=c(0, 0, 0, 0), new=TRUE)
@@ -94,6 +95,7 @@ brownfieldgrid_register_nlud = function(location) {
   }
   
   # Brownfield Register legend function
+  # The function courtesy of stackoverflow: https://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics/3932558
   add_legend_2 = function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
                 mar=c(0, 0, 0, 0), new=TRUE)
