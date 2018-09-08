@@ -95,7 +95,8 @@ brownfieldgrid_register_nlud = function(location) {
   }
   
   # Brownfield Register legend function
-  # The function courtesy of stackoverflow: https://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics/3932558
+  # The function should be attributed to a Stackoverflow (Van Der Laan, 2014): https://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics/3932558
+  # Van Der Laan, J. 2014. Plot a Legend Outside the Legend Area in Base Graphics. [Online]. [Accessed 29 November 2017]. Available from: https://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics/3932558
   add_legend_2 = function(...) {
     opar <- par(fig=c(0, 1, 0, 1), oma=c(0, 0, 0, 0), 
                 mar=c(0, 0, 0, 0), new=TRUE)
