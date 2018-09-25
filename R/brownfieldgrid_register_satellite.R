@@ -10,10 +10,10 @@
 
 brownfieldgrid_register_satellite = function(location) {
   
-  location = geocode(location, source = "dsk")
-  
-  lon = location$lon
-  lat = location$lat
+  location = google_geocode(address = location, key = "AIzaSyChTuN5dRnnG9Y3G34at4awBxhu5C9QpOI")
+
+  lon = location$results$geometry$location$lng
+  lat = location$results$geometry$location$lat
   
   bb = center_bbox(lon, lat, 1609, 1609)
   
