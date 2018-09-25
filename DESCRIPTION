@@ -9,6 +9,7 @@ Depends:
     osmar,
     osmplotr,
     rgdal,
+    googleway,
     maptools,
     spatstat,
     geosphere,
