@@ -12,11 +12,11 @@
 brownfieldgrid_osm_nlud = function(location) {
   
   # Geocode the location
-  location = geocode(location, source = "dsk")
-  
-  # Extract latitude and longitude
-  lon = location$lon
-  lat = location$lat
+  location = google_geocode(address = location, key = "AIzaSyChTuN5dRnnG9Y3G34at4awBxhu5C9QpOI")
+
+  # Extract the latitude and longitude
+  lon = location$results$geometry$location$lng
+  lat = location$results$geometry$location$lat
   
   # Set the bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
