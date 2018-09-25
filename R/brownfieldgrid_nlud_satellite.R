@@ -10,7 +10,7 @@
 
 brownfieldgrid_nlud_satellite = function(location) {
   
-  location = geocode(location)
+  location = geocode(location, source = "dsk")
   
   lon = location$lon
   lat = location$lat
