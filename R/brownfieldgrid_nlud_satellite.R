@@ -10,10 +10,12 @@
 
 brownfieldgrid_nlud_satellite = function(location) {
   
-  location = geocode(location, source = "dsk")
-  
-  lon = location$lon
-  lat = location$lat
+  # Geocode the location
+  location = google_geocode(address = location, key = "AIzaSyChTuN5dRnnG9Y3G34at4awBxhu5C9QpOI")
+
+  # Extract the latitude and longitude
+  lon = location$results$geometry$location$lng
+  lat = location$results$geometry$location$lat
   
   # Mile by mile bounding box
   bb = center_bbox(lon, lat, 1609, 1609)
