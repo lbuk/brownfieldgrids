@@ -28,22 +28,22 @@ library(brownfieldgrids)
 # Minimalistic map of OSM brownfields at Woolwich Dockyard and the local authority outline
 brownfieldgrids::brownfieldgrid_osm_borough("Brent Cross")
 ```
-![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_woolwich_dockyard.png)
+![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_brent_cross.png)
 
 ```
 # Interactive map of OSM brownfields
 brownfieldgrids::brownfieldgrid_osm_satellite("Brent Cross")
 ```
-![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_b_woolwich_dockyard.jpeg)
+![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_brent_cross.jpeg)
 
 ```
 # Map of OSM and NLUD
 brownfieldgrids::brownfieldgrid_osm_nlud("Brent Cross")
 ```
-![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_woolwich_dockyard.png)
+![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_brent_cross.png)
 
 ```
 # Map of 2009-2010 NLUD and 2018 Brownfield Register
 brownfieldgrids::brownfieldgrid_register_nlud("Brent Cross")
 ```
-![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_woolwich_dockyard.png)
+![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_brent_cross.png)
