@@ -40,10 +40,10 @@ brownfieldgrids::brownfieldgrid_osm_satellite("Brent Cross, London")
 # Map of OSM and NLUD
 brownfieldgrids::brownfieldgrid_osm_nlud("Brent Cross, London")
 ```
-![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_brent_cross.png)
+![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_b_brent_cross.png)
 
 ```
 # Map of 2009-2010 NLUD and 2018 Brownfield Register
 brownfieldgrids::brownfieldgrid_register_nlud("Brent Cross, London")
 ```
-![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_brent_cross.png)
+![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud_b_brent_cross.png)
