@@ -12,7 +12,7 @@
 brownfieldgrid_osm_nlud = function(location) {
   
   # Geocode the location
-  location = geocode(location)
+  location = geocode(location, source = "dsk")
   
   # Extract latitude and longitude
   lon = location$lon
