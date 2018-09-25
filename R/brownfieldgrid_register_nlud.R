@@ -11,7 +11,7 @@
 brownfieldgrid_register_nlud = function(location) {
   
   # Geocode the location
-  location = geocode(location)
+  location = geocode(location, source = "dsk")
   
   lon = location$lon
   lat = location$lat
