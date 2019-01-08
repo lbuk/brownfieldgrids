@@ -101,6 +101,6 @@ brownfieldgrid_osm_borough = function(location) {
   # Print the local authority the box is centred on in the terminal
   boro = as.character(df_borough[1]$NAME)
   
-  cat("Brownfield grid centred on the London local authority of ", boro)
+  cat("Brownfield grid centred on the London local authority of", boro)
   
 }
