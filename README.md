@@ -25,25 +25,25 @@ library(brownfieldgrids)
 
 ## Usage
 ```
-# Minimalistic map of OSM brownfields at Woolwich Dockyard and the local authority outline
+# Minimalistic map of OSM brownfields at Woolwich Dockyard and the local authority outline of Barnet
 brownfieldgrids::brownfieldgrid_osm_borough("Brent Cross, London")
 ```
 ![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_brent_cross.png)
 
 ```
-# Interactive map of OSM brownfields
+# Interactive satellite map of OSM brownfields in RStudio
 brownfieldgrids::brownfieldgrid_osm_satellite("Brent Cross, London")
 ```
 ![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_brent_cross.jpeg)
 
 ```
-# Map of OSM and NLUD
+# Map of OSM and NLUD brownfields
 brownfieldgrids::brownfieldgrid_osm_nlud("Brent Cross, London")
 ```
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_b_brent_cross.png)
 
 ```
-# Map of 2009-2010 NLUD and 2018 Brownfield Register
+# Map of 2009-2010 NLUD and 2018 Brownfield Register brownfields
 brownfieldgrids::brownfieldgrid_register_nlud("Brent Cross, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud__b__brent_cross.png)
