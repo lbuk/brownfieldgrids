@@ -48,8 +48,8 @@ brownfieldgrids::brownfieldgrid_register_nlud("Brent Cross, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud__b__brent_cross.png)
 
-# Download the 2018 London Brownfield Register dataset as a csv file
 ```
+# Download the 2018 London Brownfield Register dataset as a csv file
 data("london_brownfield_register")
 write.csv(london_brownfield_register, file = "london_brownfield_register.csv")
 ```
