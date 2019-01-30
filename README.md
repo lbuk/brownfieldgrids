@@ -27,7 +27,7 @@ library(osmdata)
 
 ```
 # Load the 2018 London Brownfield Register dataset and download from R as a csv file
-data("london_brownfield_register") # Load from brownfieldgrids
+data("london_brownfield_register")
 write.csv(london_brownfield_register, file = "london_brownfield_register.csv")
 ```
 
@@ -50,7 +50,7 @@ brownfieldgrids::brownfieldgrid_osm_nlud("Brent Cross, London")
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_b_brent_cross.png)
 
 ```
-# Map of 2009-2010 NLUD and 2018 Brownfield Register brownfields
+# Map of 2009-2010 NLUD and 2018 Brownfield Register brownfields at Brent Cross
 brownfieldgrids::brownfieldgrid_register_nlud("Brent Cross, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud__b__brent_cross.png)
