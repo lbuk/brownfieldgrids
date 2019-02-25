@@ -26,9 +26,8 @@ library(osmdata)
 ## Usage
 
 ```
-# Load the 2018 London Brownfield Register dataset and download from R as a csv file
+# Load the 2018 London Brownfield Register dataset
 data("london_brownfield_register")
-write.csv(london_brownfield_register, file = "london_brownfield_register.csv")
 ```
 
 ```
