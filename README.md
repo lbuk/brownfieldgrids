@@ -1,7 +1,7 @@
 # brownfieldgrids
 
 ## Overview
-An R package for creating maps of brownfield land in London using the [2018 Brownfield Register](https://www.gov.uk/guidance/brownfield-land-registers), [OpenStreetMap (OSM)](https://www.openstreetmap.org/) and the [2009-2010 National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review). Users can now download a 2018 Brownfield Register dataset for Greater London, which contains data from each borough and several development corporations. The tool was created as part of an MSc dissertation at CASA UCL in 2018.
+An R package for creating maps of brownfield land in London using the [2017/2018 Brownfield Register](https://www.gov.uk/guidance/brownfield-land-registers), [OpenStreetMap (OSM)](https://www.openstreetmap.org/) and the [2009-2010 National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review). Users can now download a 2017/2018 Brownfield Register dataset for Greater London, which contains data from each borough and several development corporations. The tool was created as part of an MSc dissertation at CASA UCL in 2018.
 
 ## Installation
 ```
@@ -26,11 +26,6 @@ library(osmdata)
 ## Usage
 
 ```
-# Load the 2018 London Brownfield Register dataset
-data("london_brownfield_register")
-```
-
-```
 # Minimalistic map of OpenStreetMap brownfields at Brent Cross and the local authority outline
 brownfieldgrids::brownfieldgrid_osm_borough("Brent Cross, London")
 ```
@@ -49,7 +44,7 @@ brownfieldgrids::brownfieldgrid_osm_nlud("Brent Cross, London")
 ![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_b_brent_cross.png)
 
 ```
-# Map of 2009-2010 NLUD and 2018 Brownfield Register brownfields at Brent Cross
+# Map of 2009-2010 NLUD and 2017/2018 Brownfield Register brownfields at Brent Cross
 brownfieldgrids::brownfieldgrid_register_nlud("Brent Cross, London")
 ```
 ![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud__b__brent_cross.png)
