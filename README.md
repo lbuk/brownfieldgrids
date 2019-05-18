@@ -1,7 +1,7 @@
 # brownfieldgrids
 
 ## Overview
-brownfieldgrids is an R package for creating maps of brownfield land in London using the [2017/2018 Brownfield Register](https://www.gov.uk/guidance/brownfield-land-registers), [OpenStreetMap (OSM)](https://www.openstreetmap.org/) and the [2009/2010 National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review). The tool was created as part of an MSc dissertation at CASA UCL in 2018.
+brownfieldgrids is an R package for creating maps of brownfield land in London using the [2017/2018 Brownfield Register](https://www.gov.uk/guidance/brownfield-land-registers), [OpenStreetMap (OSM)](https://www.openstreetmap.org/) and the [2009/2010 National Land Use Database (NLUD)](https://data.london.gov.uk/dataset/london-brownfield-sites-review).
 
 ## Installation
 ```
