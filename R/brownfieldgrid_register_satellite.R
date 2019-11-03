@@ -10,7 +10,7 @@
 
 brownfieldgrid_register_satellite = function(location) {
   
-  register_google(key = "AIzaSyChTuN5dRnnG9Y3G34at4awBxhu5C9QpOI")
+  register_google(key = "AIzaSyBncLCPbi1HBUVHR5SQfqPbVqoZkwYNTbE")
   
   # Geocode the location
   location = geocode(location)
