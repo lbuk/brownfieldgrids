@@ -17,7 +17,7 @@ devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 
 # Install osmdata
-install_github("ropensci/osmdata")
+install.packages("osmdata")
 library(osmdata)
 
 # If you request more info or have any problems then email liam.bolton.17@ucl.ac.uk
