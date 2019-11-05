@@ -14,7 +14,11 @@ brownfieldgrid_osm_satellite = function(location) {
   register_google(key = "AIzaSyBncLCPbi1HBUVHR5SQfqPbVqoZkwYNTbE")
   
   # Geocode the location
-  location = geocode(location)
+  location = 
+    location %>%
+      as.data.frame(location) %>%
+      mutate(location = as.character(location)) %>%
+      mutate_geocode(location)
 
   # Extract the latitude and longitude
   lon = location$lon
