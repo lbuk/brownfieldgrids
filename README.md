@@ -30,15 +30,3 @@ brownfieldgrids::brownfieldgrid_osm_borough("Brent Cross, London")
 brownfieldgrids::brownfieldgrid_osm_satellite("Brent Cross, London")
 ```
 ![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_brent_cross.jpeg)
-
-```
-# Map of OpenStreetMap and NLUD brownfields
-brownfieldgrids::brownfieldgrid_osm_nlud("Brent Cross, London")
-```
-![NLUD and OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrids_osm_nlud_b_brent_cross.png)
-
-```
-# Map of 2009-2010 NLUD and 2017/2018 Brownfield Register brownfields at Brent Cross
-brownfieldgrids::brownfieldgrid_register_nlud("Brent Cross, London")
-```
-![Brownfield Register and NLUD Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_register_nlud__b__brent_cross.png)
