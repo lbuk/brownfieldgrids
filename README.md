@@ -13,3 +13,21 @@ library(devtools)
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 ```
+
+## Usage
+```
+# Map of brownfield land as created by an OSM user with borough overlaid
+# Note: the quality of crowdsourced OSM data can vary
+brownfieldgrid_osm_borough("Limehouse, London")
+```
+
+```
+# Interactive map of brownfield land from OSM
+# Note: the quality of crowdsourced OSM data can vary
+brownfieldgrid_osm_satellite("Limehouse, London")
+```
+
+```
+# Comparative map of brownfield land from 2017/2018 Brownfield Register and the 2009/2010 NLUD
+brownfieldgrid_register_nlud("Limehouse, London")
+```
