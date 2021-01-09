@@ -16,17 +16,3 @@ update.packages(ask=F)
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
 ```
-
-## Usage
-
-```
-# Minimalistic map of OpenStreetMap brownfields at Brent Cross and the local authority outline
-brownfieldgrids::brownfieldgrid_osm_borough("Brent Cross, London")
-```
-![OSM Borough Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_borough_brent_cross.png)
-
-```
-# Interactive satellite map of OpenStreetMap brownfields in R
-brownfieldgrids::brownfieldgrid_osm_satellite("Brent Cross, London")
-```
-![Interactive OSM Map](https://github.com/lbuk/brownfieldgrids/blob/master/img/brownfieldgrid_osm_satellite_brent_cross.jpeg)
