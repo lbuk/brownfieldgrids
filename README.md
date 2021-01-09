@@ -9,9 +9,6 @@ brownfieldgrids is an R package for creating maps of brownfield land in London u
 install.packages("devtools")
 library(devtools)
 
-# Update packages
-update.packages(ask=F)
-
 # Install brownfieldgrids
 devtools::install_github("lbuk/brownfieldgrids")
 library(brownfieldgrids)
